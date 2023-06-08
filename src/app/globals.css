@@ -2,26 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+:root {
+  min-height: 100vh;
+  height: 100vh;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-inline: auto;
+}
+
+/* main {
+    width: min(65ch, 100% - 4rem);
+} */
+
+img,
+picture,
+svg,
+a,
+h1,
+p {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome, Edge, Opera and Firefox */
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* ::selection {
+    background-color: rgb(255, 0, 255);
+    color: white;
+} */
+
+.navlink:hover .navlink-line {
+  width: 100%;
+}
+
+.profile-pic {
+  clip-path: polygon(
+    0 100%,
+    1% 94%,
+    38% 70%,
+    37% 51%,
+    31% 44%,
+    31% 34%,
+    32% 18%,
+    37% 7%,
+    57% 0,
+    65% 1%,
+    74% 7%,
+    78% 20%,
+    78% 30%,
+    82% 34%,
+    77% 43%,
+    72% 61%,
+    69% 65%,
+    69% 74%,
+    98% 93%,
+    99% 100%
+  );
 }
