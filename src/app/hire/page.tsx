@@ -10,7 +10,7 @@ const page: FC<pageProps> = ({}) => {
     <Container width='w-full' className='relative animate-fade-up animate-once animate-duration-1000 animate-delay-500'>
       <Header size={'xl'} className='absolute -top-20 left-8 text-neutral-400'>LET&apos;S TALK, LET&apos;S DO</Header>
       <div className='absolute top-56 left-9 right-9'>
-        <p className='mb-6 text-sm font-[Gambetta] text-neutral-400'>Let&apos;s make your brand <span className='font-extrabold'>glow</span></p>
+        <p className='mb-6 text-sm font-[Gambetta] italic text-neutral-400'>Let&apos;s make your brand <span className='font-extrabold'>glow</span></p>
         <ContactForm className='flex justify-center items-start flex-col' />
       </div>
     </Container>

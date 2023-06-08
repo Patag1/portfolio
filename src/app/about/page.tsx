@@ -3,6 +3,7 @@ import { FC } from 'react'
 import Container from '../components/Container'
 import Header from '../components/ui/Header'
 import { Icons } from '../components/Icons'
+import Gambetta from '../components/ui/Gambetta'
 
 interface pageProps {}
 
@@ -21,10 +22,8 @@ const page: FC<pageProps> = ({}) => {
     <div className='lg:w-11/12 w-full px-8 pt-4'>
       <p className='font-[Gambetta] text-sm italic text-neutral-400 mb-2 rounded-sm'>What I do</p>
       <p className='text-neutral-50 text-4xl font-light'>
-        I help startups and businesses <span className='font-[Gambetta] italic font-bold text-[2.6rem] leading-none'>grow</span>, understanding the challenges and opportunities that arise in the tech industry, being passionate about helping companies like yours <span className='font-[Gambetta] italic font-bold text-[2.6rem] leading-none'>thrive</span> in this ever-evolving landscape.
+        I help startups and businesses <Gambetta size='lg' weight='on' color='white'>grow</Gambetta>, understanding the challenges and opportunities that arise in the tech industry, being passionate about helping companies like yours <Gambetta size='lg' weight='on' color='white'>thrive</Gambetta> in this ever-evolving landscape.
       </p>
-      {/* <p className='font-[Gambetta] text-sm italic text-neutral-400 mt-2 rounded-sm'>Based in Argentina</p> */}
-      {/* <p className='font-[Gambetta] text-sm italic text-neutral-400 my-2 rounded-sm'>Skillset</p> */}
       <div className='h-1 w-full my-4 bg-neutral-400'></div>
     </div>
     <div className='lg:w-11/12 w-full px-8 flex justify-start items-start gap-16'>
@@ -36,19 +35,19 @@ const page: FC<pageProps> = ({}) => {
         <div className='mt-1 flex justify-center items-start flex-col'>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Tailwind</p>
+            <Gambetta size='sm' weight='' color='gray'>Tailwind</Gambetta>
           </div>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Typescript</p>
+            <Gambetta size='sm' weight='' color='gray'>Typescript</Gambetta>
           </div>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Next.js</p>
+            <Gambetta size='sm' weight='' color='gray'>Next.js</Gambetta>
           </div>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Zustand</p>
+            <Gambetta size='sm' weight='' color='gray'>Zustand</Gambetta>
           </div>
         </div>
 
@@ -61,15 +60,15 @@ const page: FC<pageProps> = ({}) => {
         <div className='mt-1 flex justify-center items-start flex-col'>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Node.js</p>
+            <Gambetta size='sm' weight='' color='gray'>Node.js</Gambetta>
           </div>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Express.js</p>
+            <Gambetta size='sm' weight='' color='gray'>Express.js</Gambetta>
           </div>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>Prisma</p>
+            <Gambetta size='sm' weight='' color='gray'>Prisma</Gambetta>
           </div>
         </div>
 
@@ -82,7 +81,7 @@ const page: FC<pageProps> = ({}) => {
         <div className='mt-1 flex justify-center items-start flex-col'>
           <div className='flex justify-start items-center gap-1'>
             <Icons.Dot size={10} className='text-neutral-50' />
-            <p className='font-[Gambetta] text-sm italic text-neutral-400 rounded-sm'>PostgreSQL</p>
+            <Gambetta size='sm' weight='' color='gray'>PostgreSQL</Gambetta>
           </div>
         </div>
       </div>

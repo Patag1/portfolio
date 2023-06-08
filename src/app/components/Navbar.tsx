@@ -3,6 +3,7 @@ import { FC } from 'react'
 import NavLink from './ui/NavLink'
 import { Icons } from './Icons'
 import Link from 'next/link'
+import Gambetta from './ui/Gambetta'
 
 interface NavbarProps {}
 
@@ -16,7 +17,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           height={100}
           className='px-2'
         />
-        <p className='font-[Gambetta] font-extrabold text-neutral-400 text-xs italic text-center'>Augusto<br />Sasso</p>
+        <Gambetta size='xs' weight='on' color='gray'>Augusto<br />Sasso</Gambetta>
     </Link>
     <div className='flex justify-between items-center flex-col gap-2'>
         <NavLink

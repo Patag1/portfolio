@@ -1,9 +1,10 @@
 import { cn } from "@/app/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { forwardRef, HTMLAttributes } from "react";
+import { morganite } from "../Fonts";
 
 const HeaderVariants = cva(
-    'font-[Morganite] font-bold',
+    `${morganite.className} font-bold`,
     {
         variants: {
             size: {
