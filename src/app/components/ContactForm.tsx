@@ -9,12 +9,12 @@ interface ContactFormProps {
 }
 
 const ContactForm: FC<ContactFormProps> = ({ className }) => {
-  const form = useRef<HTMLFormElement>()
+  const form = useRef<any>()
   
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_smax5ij', 'template_hgznvh2', form.current!, 'rcdCD6i8Vp1qSYK0Q')
+    emailjs.sendForm('service_smax5ij', 'template_hgznvh2', form.current, 'rcdCD6i8Vp1qSYK0Q')
       .then(() => (
         <Image
           src='Selfie1.png'
