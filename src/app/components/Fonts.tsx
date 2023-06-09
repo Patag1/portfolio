@@ -8,7 +8,7 @@ export const poppins = Poppins({
 })
 
 export const morganite = Morganite({
-  src: '../MORGANITE-BOOK.woff2',
+  src: '../Morganite-Medium.woff2',
   display: 'swap'
 })
 

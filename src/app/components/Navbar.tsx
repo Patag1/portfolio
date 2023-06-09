@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { FC } from 'react'
 import NavLink from './ui/NavLink'
-import { Icons } from './Icons'
 import Link from 'next/link'
 import Gambetta from './ui/Gambetta'
+import { Dot } from 'lucide-react'
 
 interface NavbarProps {}
 
@@ -17,7 +17,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           height={100}
           className='px-2'
         />
-        <Gambetta size='xs' weight='on' color='gray'>Augusto<br />Sasso</Gambetta>
+        <Gambetta size='xs' weight='on' color='gray' className=''>Augusto<br />Sasso</Gambetta>
     </Link>
     <div className='flex justify-between items-center flex-col gap-2'>
         <NavLink
@@ -28,7 +28,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           href='hire'
           label='HIRE ME'
         />
-        <Icons.Dot size={20} className='m-0 p-0 text-neutral-900' />
+        <Dot size={20} className='m-0 p-0 text-neutral-900' />
     </div>
   </div>
 }

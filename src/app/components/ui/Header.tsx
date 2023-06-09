@@ -4,14 +4,14 @@ import { forwardRef, HTMLAttributes } from "react";
 import { morganite } from "../Fonts";
 
 const HeaderVariants = cva(
-    `${morganite.className} font-bold`,
+    `${morganite.className} font-bold tracking-wide`,
     {
         variants: {
             size: {
-                default: 'text-4xl md:text-5xl lg:text-6xl',
-                xl: 'text-[9rem] md:text-[12rem] lg:text-[15rem]',
-                lg: 'text-5xl md:text-6xl lg:text-7xl',
-                sm: 'text-2xl md:text-3xl lg:text-4xl'
+                default: 'text-4xl md:text-5xl lg:text-6xl leading-3',
+                xl: 'text-[9rem] md:text-[12rem] lg:text-[15rem] leading-[9rem]',
+                lg: 'text-5xl md:text-6xl lg:text-7xl leading-3',
+                sm: 'text-2xl md:text-3xl lg:text-4xl leading-3'
             }
         },
         defaultVariants: {
