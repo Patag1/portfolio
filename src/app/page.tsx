@@ -1,18 +1,25 @@
-import Header from './components/ui/Header'
-import Loader from './components/Loader'
+import Header from "./components/ui/Header";
+import Loader from "./components/Loader";
 
 export default function Home() {
   return (
-    <main className='relative h-screen w-full overflow-y-hidden'>
+    <main className="relative h-screen w-full overflow-y-hidden grid grid-cols-1 grid-rows-[1fr_1.5rem]">
       <Loader />
       <video
-        src={'/landingvideo.mp4'}
+        src={"/landingvideo.mp4"}
         autoPlay
         loop
         muted
-        className='absolute top-0 w-full h-screen -z-10 object-cover'
+        className="absolute top-0 w-full h-screen -z-10 object-cover"
       ></video>
-      <Header size={'xl'} className='absolute -bottom-20 right-2 text-right text-neutral-50 animate-fade-up animate-once animate-duration-1000 animate-delay-[5000ms]'>FRONT-END DEVELOPER</Header>
+      <section className="flex justify-end items-end mb-5 mr-1">
+        <Header
+          size={"xl"}
+          className="text-right text-neutral-50 animate-fade-up animate-once animate-duration-1000 animate-delay-[5000ms]"
+        >
+          FRONT-END DEVELOPER
+        </Header>
+      </section>
     </main>
-  )
+  );
 }

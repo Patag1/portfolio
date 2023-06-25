@@ -8,7 +8,7 @@ import { Dot } from 'lucide-react'
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
-  return <div className='absolute z-10 top-2 left-2 bottom-8 h-auto flex justify-between items-center flex-col py-2 bg-neutral-50 rounded-md'>
+  return <nav className='absolute z-10 top-2 left-2 bottom-8 h-auto flex justify-between items-center flex-col py-2 bg-neutral-50 rounded-md'>
     <Link href={'/'} className='flex flex-col justify-center items-center gap-2'>
         <Image
           src={'/signature.png'}
@@ -30,7 +30,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         />
         <Dot size={20} className='m-0 p-0 text-neutral-900' />
     </div>
-  </div>
+  </nav>
 }
 
 export default Navbar
