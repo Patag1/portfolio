@@ -1,37 +1,36 @@
-import { cn } from "@/app/lib/utils";
-import { cva, VariantProps } from "class-variance-authority";
-import { forwardRef, HTMLAttributes } from "react";
-import { morganite } from "../Fonts";
+import { FC } from "react";
+import { morganite } from "./fonts/Fonts";
 
-const HeaderVariants = cva(
-    `${morganite.className} font-bold tracking-wide`,
-    {
-        variants: {
-            size: {
-                default: 'text-4xl md:text-5xl lg:text-6xl leading-3',
-                xl: 'text-[9rem] md:text-[12rem] lg:text-[15rem] leading-[9rem]',
-                lg: 'text-5xl md:text-6xl lg:text-7xl leading-3',
-                sm: 'text-2xl md:text-3xl lg:text-4xl leading-3'
-            }
-        },
-        defaultVariants: {
-            size: 'default'
-        }
-    }
-)
+interface HeaderProps {
+  size: 'default' | 'xl' | 'lg' | 'sm';
+  gray?: boolean;
+  className?: string;
+  children: string;
+  props?: any;
+}
 
-interface HeaderProps extends HTMLAttributes<HTMLHeadingElement>, VariantProps<typeof HeaderVariants> {}
+const Header: FC<HeaderProps> = ({
+  size, gray, className, props, children
+}) => {
 
-const Header = forwardRef<HTMLHeadingElement, HeaderProps>(({
-    className, size, children, ...props
-}, ref) => {
+    const setSize = size === 'xl'
+        ? 'text-[9rem] md:text-[12rem] lg:text-[15rem] leading-[11rem]'
+        : size === 'lg'
+        ? 'text-5xl md:text-6xl lg:text-7xl leading-3'
+        : size === 'sm'
+        ? 'text-2xl md:text-3xl lg:text-4xl leading-3'
+        : 'text-4xl md:text-5xl lg:text-6xl leading-3' // default
+
     return (
-        <h1 className={cn(HeaderVariants({size, className}))} {...props} ref={ref}>
+        <h1 className={`
+            ${morganite.className} font-bold tracking-wide
+            ${gray ? 'text-neutral-400' : 'text-neutral-50'}
+            ${className}
+            ${setSize}
+        `} {...props}>
             { children }
         </h1>
     )
-})
-
-Header.displayName = 'Header'
+}
 
 export default Header

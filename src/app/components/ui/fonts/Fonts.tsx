@@ -8,19 +8,19 @@ export const poppins = Poppins({
 })
 
 export const morganite = Morganite({
-  src: '../Morganite-Medium.woff2',
+  src: './Morganite-Medium.woff2',
   display: 'swap'
 })
 
 export const gambetta = Gambetta({
   src: [
     {
-        path: '../GAMBETTA-BOLDITALIC.woff2',
+        path: './GAMBETTA-BOLDITALIC.woff2',
         weight: '800',
         style: 'italic'
     },
     {
-        path: '../GAMBETTA-ITALIC.woff2',
+        path: './GAMBETTA-ITALIC.woff2',
         weight: '400',
         style: 'italic'
     }

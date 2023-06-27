@@ -6,7 +6,7 @@ import { FC, useEffect, useState } from 'react'
 interface LoaderProps {}
 
 const Loader: FC<LoaderProps> = ({}) => {
-  const [dynamicHeight, setDynamicHeight] = useState('h-screen')
+  const [dynamicHeight, setDynamicHeight] = useState('h-full')
   const [dynamicOpacity, setDynamicOpacity] = useState('opacity-0')
 
   const changeClass = () => {
@@ -20,7 +20,7 @@ const Loader: FC<LoaderProps> = ({}) => {
   }, [])
 
   return (
-    <div className={`absolute w-full ${dynamicHeight} z-20 flex justify-center items-center bg-neutral-50 ease-in-out duration-1000`}>
+    <div className={`w-full ${dynamicHeight} z-20 flex justify-center items-center bg-neutral-50 ease-in-out duration-1000`}>
       <Image
         src={'/signature.png'}
         alt='signature'
