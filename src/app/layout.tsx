@@ -22,7 +22,7 @@ export default function RootLayout({
           <div>
             <Navbar />
           </div>
-          <section className="w-full px-8 py-5 animate-fade-up animate-once animate-duration-1000 animate-delay-500">
+          <section className="w-full px-8 py-5">
             {children}
           </section>
         </main>

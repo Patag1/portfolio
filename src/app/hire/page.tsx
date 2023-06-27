@@ -6,7 +6,7 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <article className="w-11/12 grid grid-cols-1 grid-rows-[min-content_auto] gap-2">
+    <article className="w-11/12 grid grid-cols-1 grid-rows-[min-content_auto] gap-2  animate-fade-up animate-once animate-duration-1000 animate-delay-500">
       <Head
         title="LET&apos;S TALK, LET&apos;S DO"
         subtitle="Let&apos;s make your brand glow"

@@ -7,7 +7,7 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <>
+    <div className="animate-fade-up animate-once animate-duration-1000 animate-delay-500">
       <Head title="ABOUT" subtitle="What I do" image />
       <article className="mt-3">
         <p className="text-neutral-50 text-4xl font-light">
@@ -89,7 +89,7 @@ const page: FC<pageProps> = ({}) => {
           </div>
         </div>
       </article>
-    </>
+    </div>
   );
 };
 
