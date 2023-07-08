@@ -63,3 +63,17 @@ svg {
 .navlink:hover .navlink-line {
   width: 100%;
 }
+
+@keyframes fade-border {
+  0% {
+    border: 2px transparent;
+  }
+  100% {
+    border: 2px solid #FAFAFA;
+  }
+}
+
+.animate-fade-border {
+  animation: fade-border 1s both;
+  animation-delay: 4650ms;
+}

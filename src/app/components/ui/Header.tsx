@@ -2,7 +2,7 @@ import { FC } from "react";
 import { morganite } from "./fonts/Fonts";
 
 interface HeaderProps {
-  size: 'default' | 'xl' | 'lg' | 'sm';
+  size?: 'xl' | 'lg' | 'sm';
   gray?: boolean;
   className?: string;
   children: string;
@@ -18,11 +18,12 @@ const Header: FC<HeaderProps> = ({
         : size === 'lg'
         ? 'text-5xl md:text-6xl lg:text-7xl leading-3'
         : size === 'sm'
-        ? 'text-2xl md:text-3xl lg:text-4xl leading-3'
-        : 'text-4xl md:text-5xl lg:text-6xl leading-3' // default
+        ? 'text-2xl md:text-3xl lg:text-4xl leading-none'
+        : 'text-4xl md:text-5xl lg:text-6xl leading-none' // default
 
     return (
         <h1 className={`
+            uppercase
             ${morganite.className} font-bold tracking-wide
             ${gray ? 'text-neutral-400' : 'text-neutral-50'}
             ${className}

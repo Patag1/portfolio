@@ -8,16 +8,16 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <div className="animate-fade-up animate-once animate-duration-1000 animate-delay-500">
-      <Head title="ABOUT" subtitle="What I do" image />
+      <Head title="ABOUT" subtitle="What I do" />
       <article className="mt-3">
         <p className="text-neutral-50 text-4xl font-light">
           I help startups and businesses{" "}
-          <Gambetta size="lg" weight="on" color="white">
+          <Gambetta size="lg" weight color="white">
             grow
           </Gambetta>
           , understanding the challenges and opportunities that arise in the
           tech industry, being passionate about helping companies like yours{" "}
-          <Gambetta size="lg" weight="on" color="white">
+          <Gambetta size="lg" weight color="white">
             thrive
           </Gambetta>{" "}
           in this ever-evolving landscape.
@@ -30,25 +30,25 @@ const page: FC<pageProps> = ({}) => {
           <div className="mt-1 flex justify-center items-start flex-col">
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Tailwind
               </Gambetta>
             </div>
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Typescript
               </Gambetta>
             </div>
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Next.js
               </Gambetta>
             </div>
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Zustand
               </Gambetta>
             </div>
@@ -59,19 +59,19 @@ const page: FC<pageProps> = ({}) => {
           <div className="mt-1 flex justify-center items-start flex-col">
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Node.js
               </Gambetta>
             </div>
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Express.js
               </Gambetta>
             </div>
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 Prisma
               </Gambetta>
             </div>
@@ -82,7 +82,7 @@ const page: FC<pageProps> = ({}) => {
           <div className="mt-1 flex justify-center items-start flex-col">
             <div className="flex justify-start items-center gap-1">
               <Dot size={10} className="text-neutral-50" />
-              <Gambetta size="sm" weight="" color="gray">
+              <Gambetta size="md" weight color="gray">
                 PostgreSQL
               </Gambetta>
             </div>
