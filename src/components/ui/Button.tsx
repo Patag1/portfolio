@@ -56,7 +56,7 @@ const Button: FC<ButtonProps> = ({
         </button>
       )}
       <span
-        className={`${gambetta.className} font-extrabold absolute w-fit h-fit right-6 top-1/2 bottom-1/2 -translate-y-1/2 opacity-0 bg-black text-cwhite px-2 py-1  transition-all pointer-events-none text-xs`}
+        className={`${gambetta.className} font-extrabold absolute w-fit h-fit right-6 top-1/2 bottom-1/2 -translate-y-1/2 opacity-0 bg-black text-cwhite px-2 py-1  transition-all pointer-events-none text-xs whitespace-nowrap`}
       >
         {label}
       </span>

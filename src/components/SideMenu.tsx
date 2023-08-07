@@ -7,6 +7,7 @@ import { BiLogoGmail } from 'react-icons/bi'
 import { SiLinktree } from 'react-icons/si'
 import { MdOutlineWorkOutline } from 'react-icons/md'
 import ThemeBtn from './ui/ThemeBtn'
+import CV from './CV'
 
 interface SideMenuProps {}
 
@@ -43,6 +44,8 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
           label="Hire"
           onClick={() => {}}
         />
+        <div className='my-1'></div>
+        <CV />
         <div className='my-1'></div>
         <Button
           icon1={AiFillLinkedin}
