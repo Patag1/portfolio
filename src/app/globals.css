@@ -7,29 +7,6 @@
   padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-:root {
-  min-height: 100vh;
-  height: 100vh;
-}
-
-body {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-inline: auto;
-}
-
-/* main {
-    width: min(65ch, 100% - 4rem);
-} */
-
 img,
 picture,
 svg,
@@ -53,27 +30,4 @@ picture,
 svg {
   max-width: 100%;
   display: block;
-}
-
-/* ::selection {
-    background-color: rgb(255, 0, 255);
-    color: white;
-} */
-
-.navlink:hover .navlink-line {
-  width: 100%;
-}
-
-@keyframes fade-border {
-  0% {
-    border: 2px transparent;
-  }
-  100% {
-    border: 2px solid #FAFAFA;
-  }
-}
-
-.animate-fade-border {
-  animation: fade-border 1s both;
-  animation-delay: 4650ms;
 }

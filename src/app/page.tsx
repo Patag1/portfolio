@@ -1,56 +1,32 @@
-import Header from "./components/ui/Header";
-import Loader from "./components/Loader";
-import Image from "next/image";
+import Title from '@/components/ui/Title'
+// import Loader from '@/components/Loader'
+import Gambetta from '@/components/ui/Gambetta'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
     <>
-      <Loader />
-      <article className="
-        relative
-        w-full
-        h-full
-        flex
-        justify-end
-        items-end
-        border-0
-        border-white
-        animate-fade-border
-        animate-delay-[4650ms]
-      ">
-        <div className="
-          absolute
-          top-4
-          left-4
-          flex
-          justify-center
-          items-center
-          gap-4
-          text-right
-          animate-fade-up
-          animate-once
-          animate-duration-1000
-          animate-delay-[5000ms]
-          ">
-          <Image
-              src="/Selfie1.png"
-              alt="profile-pic"
-              width={200}
-              height={200}
-              className="w-32 saturate-0 rounded-full"
-          />
-          <Header size="lg">
-            Augusto Sasso
-          </Header>
-          {/* <p className="text-xl text-white font-bold leading-none">Augusto Sasso</p> */}
-        </div>
-        <Header
-          size={"xl"}
-          className="text-right animate-fade-up animate-once animate-duration-1000 animate-delay-[5000ms]"
-        >
-          FRONT-END DEVELOPER
-        </Header>
-      </article>
+      <Title text="What do I do?" gray />
+      <p>
+        I help startups and businesses{' '}
+        <Gambetta remark weight>
+          grow
+        </Gambetta>
+        , understanding the challenges and opportunities that arise in the tech
+        industry, being passionate about helping companies like yours{' '}
+        <Gambetta remark weight>
+          thrive
+        </Gambetta>{' '}
+        in this ever-evolving landscape.
+      </p>
+      <br />
+      <Title text="Projects" gray />
+      <p>
+        Please note that most of my most complex projects are private startup
+        initiatives. Don&apos;t be fooled!
+      </p>
+      <br />
+      <Projects />
     </>
-  );
+  )
 }

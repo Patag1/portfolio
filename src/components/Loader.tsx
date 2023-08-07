@@ -1,5 +1,6 @@
 'use client'
 
+import { morganite } from '@/fonts/Fonts'
 import Image from 'next/image'
 import { FC, useEffect, useState } from 'react'
 
@@ -20,15 +21,21 @@ const Loader: FC<LoaderProps> = ({}) => {
   }, [])
 
   return (
-    <div className={`w-full ${dynamicHeight} z-20 flex justify-center items-center bg-neutral-50 ease-in-out duration-1000`}>
+    <div
+      className={`${dynamicHeight} fixed top-0 bottom-0 left-0 right-0 z-20 flex justify-center items-center gap-6 bg-neutral-50 ease-in-out duration-1000`}
+    >
       <Image
         src={'/signature.png'}
-        alt='signature'
+        alt="signature"
         width={200}
         height={200}
-        className={`${dynamicOpacity} ease-in-out duration-700`}
+        className={`${dynamicOpacity} w-auto h-auto ease-in-out duration-700`}
       />
-      <p className={`${dynamicOpacity} font-[Gambetta] text-2xl text-neutral-400 italic ease-in-out duration-700`}>Augusto Sasso</p>
+      <p
+        className={`${dynamicOpacity} ${morganite.className} text-8xl font-bold tracking-wide text-cblack ease-in-out duration-700`}
+      >
+        Augusto Sasso
+      </p>
     </div>
   )
 }

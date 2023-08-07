@@ -17,7 +17,9 @@ module.exports = {
       },
       colors: {
         ...colors,
+        'cwhite': '#FAFAFA',
         'yellowA': '#ECE900',
+        'cblack': '#151515',
       }
     },
   },
