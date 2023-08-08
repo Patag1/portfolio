@@ -24,7 +24,7 @@ export default function RootLayout({
           <main className="w-fit mx-auto px-6 py-2 my-32 grid grid-rows-[min-content_1fr] grid-cols-1 md:border-x-2 border-cblack dark:border-cwhite">
             <Header />
             <br />
-            <div className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
+            <article className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
               <div className="max-w-prose">
                 {children}
                 <hr className="my-4 bg-neutral-300 dark:bg-cwhite" />
@@ -38,7 +38,7 @@ export default function RootLayout({
                 ></iframe>
               </div>
               <SideMenu />
-            </div>
+            </article>
           </main>
         </Provider>
         <Loader />

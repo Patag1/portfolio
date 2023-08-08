@@ -30,7 +30,7 @@ const Header: FC<HeaderProps> = ({}) => {
   }
 
   return (
-    <div>
+    <section>
       <div className="flex justify-between items-center">
         <Title text={title ?? '?'} large />
         <div className="relative [&>div]:hover:opacity-100 [&>div]:hover:-translate-x-2 mb-2">
@@ -61,7 +61,7 @@ const Header: FC<HeaderProps> = ({}) => {
       ) : (
         <hr className="bg-neutral-300 dark:bg-cwhite" />
       )}
-    </div>
+    </section>
   )
 }
 
