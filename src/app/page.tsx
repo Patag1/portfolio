@@ -1,5 +1,4 @@
 import Title from '@/components/ui/Title'
-// import Loader from '@/components/Loader'
 import Gambetta from '@/components/ui/Gambetta'
 import Projects from '@/components/Projects'
 
