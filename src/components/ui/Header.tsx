@@ -39,7 +39,7 @@ const Header: FC<HeaderProps> = ({}) => {
             alt="profile-pic"
             width={60}
             height={60}
-            className="w-auto h-auto saturate-0 rounded-full"
+            className="w-auto h-auto saturate-0 rounded-full bg-black"
           />
           <div
             className={`${gambetta.className} absolute w-fit h-fit opacity-0 top-1/2 bottom-1/2 right-16 -translate-y-1/2 pointer-events-none transition-all whitespace-nowrap text-xs bg-black bg-opacity-75 text-gray-200 px-2 py-1 font-extrabold`}
