@@ -85,7 +85,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
       </div>
       <button
         type="submit"
-        className={`${gambetta.className} text-cblack dark:text-cwhite text-lg mt-2 mr-2 px-1 hover:bg-yellowA hover:text-neutral-900 font-extrabold transition-all`}
+        className={`${gambetta.className} text-cblack dark:text-cwhite text-lg mt-2 mr-2 px-1 hover:bg-yellowA hover:text-cblack dark:hover:text-cblack font-extrabold transition-all`}
       >
         Submit
       </button>
