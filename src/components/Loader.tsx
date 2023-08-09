@@ -22,7 +22,7 @@ const Loader: FC<LoaderProps> = ({}) => {
 
   return (
     <div
-      className={`${dynamicHeight} fixed top-0 bottom-0 left-0 right-0 z-20 flex justify-center items-center gap-6 bg-neutral-50 ease-in-out duration-1000`}
+      className={`${dynamicHeight} fixed top-0 bottom-0 left-0 right-0 z-20 flex justify-center items-center gap-6 bg-cwhite ease-in-out duration-1000`}
     >
       <Image
         src={'/signature.png'}
