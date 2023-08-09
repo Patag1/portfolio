@@ -35,7 +35,7 @@ const Header: FC<HeaderProps> = ({}) => {
         <Title text={title ?? '?'} large />
         <div className="relative [&>div]:hover:opacity-100 [&>div]:hover:-translate-x-2 mb-2">
           <Image
-            src="/Selfie1.png"
+            src="/Selfie.png"
             alt="profile-pic"
             width={60}
             height={60}

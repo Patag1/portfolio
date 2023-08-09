@@ -46,7 +46,6 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
         />
         <div className='my-1'></div>
         <CV />
-        <div className='my-1'></div>
         <Button
           icon1={AiFillLinkedin}
           icon2={AiFillLinkedin}
