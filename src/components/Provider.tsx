@@ -2,7 +2,7 @@
 
 import { FC } from 'react'
 import { ThemeProvider } from 'next-themes'
-import { Toaster } from 'react-hot-toast'
+import { Toaster } from 'sonner'
 
 interface ProviderProps {
   children: React.ReactNode

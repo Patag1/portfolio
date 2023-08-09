@@ -3,7 +3,7 @@
 import { FC, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { gambetta } from '@/fonts/Fonts'
-import toast from 'react-hot-toast'
+import { toast } from 'sonner'
 
 interface ContactFormProps {}
 
@@ -20,12 +20,15 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
         form.current,
         'rcdCD6i8Vp1qSYK0Q'
       )
-      .then(() => toast.success('Thanks! I will review your email shortly'))
+      .then(() => {
+        toast.success('Thanks! I will review your email shortly')
+        form.current.reset()
+      })
       .catch(() => toast.error('Oh no, something broke! Try again later'))
   }
 
   return (
-    <form action="" ref={form} onSubmit={handleSubmit} className="text-cblack">
+    <form ref={form} onSubmit={handleSubmit} className="text-cblack">
       <div className="bg-cwhite border-[1px] border-neutral-300">
         <div className="relative">
           <input
@@ -61,9 +64,10 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
           <select
             required
             name="job"
+            defaultValue=""
             className="w-full py-1 bg-transparent focus:border-none focus:outline-none"
           >
-            <option value="" selected disabled>
+            <option value="" disabled>
               Select one
             </option>
             <option value="internship">Internship</option>
