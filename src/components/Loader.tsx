@@ -13,8 +13,8 @@ const Loader: FC<LoaderProps> = ({}) => {
   const changeClass = () => {
     setTimeout(() => setDynamicHeight('h-0'), 500)
     setDynamicOpacity('opacity-0')
-    document.body.remove('overflow-hidden')
-    document.body.add('overflow-y-auto')
+    document.body.classList.remove('overflow-hidden')
+    document.body.classList.add('overflow-y-auto')
   }
 
   useEffect(() => {
