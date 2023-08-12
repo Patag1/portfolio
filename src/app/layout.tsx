@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-cwhite dark:bg-cblack text-cblack dark:text-cwhite transition-all`}
+        className={`${poppins.className} bg-cwhite dark:bg-cblack text-cblack dark:text-cwhite transition-all overflow-hidden`}
       >
         <Provider>
           <main className="w-fit mx-auto px-6 py-2 my-32 grid grid-rows-[min-content_1fr] grid-cols-1 md:border-x-2 border-cblack dark:border-cwhite">
