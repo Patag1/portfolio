@@ -10,11 +10,15 @@ const Loader: FC<LoaderProps> = ({}) => {
   const [dynamicHeight, setDynamicHeight] = useState('h-full')
   const [dynamicOpacity, setDynamicOpacity] = useState('opacity-0')
   
-  const changeClass = () => {
-    setTimeout(() => setDynamicHeight('h-0'), 500)
-    setDynamicOpacity('opacity-0')
+  const bodyClasses = () => {
     document.body.classList.remove('overflow-hidden')
     document.body.classList.add('overflow-y-auto')
+  }
+
+  const changeClass = () => {
+    setTimeout(() => setDynamicHeight('h-0'), 500)
+    setTimeout(() => bodyClasses(), 500)
+    setDynamicOpacity('opacity-0')
   }
 
   useEffect(() => {
