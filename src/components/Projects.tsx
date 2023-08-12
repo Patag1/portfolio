@@ -25,7 +25,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
                 <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
                   <p className="text-xs text-neutral-400">github</p>
                   <span
-                    className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black bg-opacity-75text-gray-200 px-2 py-1  transition-all pointer-events-none text-xs whitespace-nowrap`}
+                    className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1  transition-all pointer-events-none text-xs whitespace-nowrap`}
                   >
                     Private
                   </span>
