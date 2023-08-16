@@ -39,7 +39,7 @@ const Header: FC<HeaderProps> = ({}) => {
             alt="profile-pic"
             width={60}
             height={60}
-            className="w-auto h-auto saturate-0 hover:saturate-100 hover:scale-105 rounded-full bg-neutral-400 dark:bg-black transition-all ease-in-out duration-300"
+            className="w-auto h-auto saturate-0 hover:saturate-100 hover:scale-105 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 rounded-full bg-neutral-400 dark:bg-black transition-all ease-in-out duration-300"
           />
           <div
             className={`${gambetta.className} absolute w-fit h-fit opacity-0 top-1/2 bottom-1/2 right-16 -translate-y-1/2 pointer-events-none transition-all whitespace-nowrap text-xs bg-black bg-opacity-75 text-gray-200 px-2 py-1 font-extrabold`}
