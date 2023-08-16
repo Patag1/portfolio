@@ -112,7 +112,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
           {toggleDesc ? desc : shortenedDesc}
           {desc.length > 172 && (
             <span
-              className="p-1 hover:underline text-cyan-400 text-xs"
+              className="p-1 hover:underline text-cyan-400 text-xs whitespace-nowrap"
               onClick={handleDesc}
             >
               Read {toggleDesc ? 'less' : 'more'}
