@@ -23,7 +23,7 @@ const Title: FC<HeaderProps> = ({
             uppercase
             font-bold
             tracking-wide
-            ${gray ? 'text-neutral-400' : 'text-cblack dark:text-cwhite'}
+            ${gray ? 'text-neutral-500 dark:text-neutral-400' : 'text-cblack dark:text-cwhite'}
             ${className}
             ${large ? 'text-7xl' : 'text-4xl'}
         `}

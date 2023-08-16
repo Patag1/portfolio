@@ -23,7 +23,7 @@ const page: FC<pageProps> = ({}) => {
       </p>
       <br />
       <ul className="grid md:grid-cols-2 grid-cols-1 grid-rows-auto gap-4">
-        <li className="p-4 flex flex-col gap-2 border-[1px] border-neutral-300 dark:border-cwhite">
+        <li className="p-4 flex flex-col gap-2 border-[1px] border-cblack dark:border-cwhite">
           <Gambetta weight gray large>
             Front-End Developer
           </Gambetta>
@@ -48,7 +48,7 @@ const page: FC<pageProps> = ({}) => {
             </div>
           </div>
         </li>
-        <li className="p-4 flex flex-col gap-2 border-[1px] border-neutral-300 dark:border-cwhite">
+        <li className="p-4 flex flex-col gap-2 border-[1px] border-cblack dark:border-cwhite">
           <Gambetta weight gray large>
             IT Recruiter
           </Gambetta>

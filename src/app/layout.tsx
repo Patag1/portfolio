@@ -27,7 +27,7 @@ export default function RootLayout({
             <article className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
               <div className="max-w-prose">
                 {children}
-                <hr className="my-4 bg-neutral-300 dark:bg-cwhite" />
+                <div className="my-4 border-b-[1px] border-cblack dark:border-cwhite" />
                 <iframe
                   className="rounded-xl"
                   src="https://open.spotify.com/embed/playlist/66cYkZTFtuwp17Q53KR8qn?utm_source=generator"

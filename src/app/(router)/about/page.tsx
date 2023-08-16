@@ -47,7 +47,7 @@ const page: FC<pageProps> = ({}) => {
       <p>I specialize using...</p>
       <br />
       <div className="grid md:grid-cols-3 grid-cols-1 grid-rows-auto gap-6">
-        <div className="p-4 border-[1px] border-neutral-300 dark:border-cwhite">
+        <div className="p-4 border-[1px] border-cblack dark:border-cwhite">
           <Gambetta gray weight large>
             Front-end
           </Gambetta>
@@ -60,7 +60,7 @@ const page: FC<pageProps> = ({}) => {
             <li>Zustand</li>
           </ul>
         </div>
-        <div className="p-4 border-[1px] border-neutral-300 dark:border-cwhite">
+        <div className="p-4 border-[1px] border-cblack dark:border-cwhite">
           <Gambetta gray weight large>
             Back-end
           </Gambetta>
@@ -70,7 +70,7 @@ const page: FC<pageProps> = ({}) => {
             <li>Node.js</li>
           </ul>
         </div>
-        <div className="p-4 border-[1px] border-neutral-300 dark:border-cwhite">
+        <div className="p-4 border-[1px] border-cblack dark:border-cwhite">
           <Gambetta gray weight large>
             Databases
           </Gambetta>

@@ -29,7 +29,7 @@ const Gambetta: FC<GambettaProps> = ({
         ${remark && 'bg-yellowA'}
         ${weight ? 'font-extrabold' : 'font-normal'}
         ${large ? 'text-2xl' : small ? 'text-xs' : 'text-xl'}
-        ${gray ? 'text-neutral-400' : 'text-cblack'}
+        ${gray ? 'text-neutral-500 dark:text-neutral-400' : 'text-cblack'}
       `}
     >
       {children}
