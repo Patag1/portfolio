@@ -8,6 +8,7 @@ import { gambetta } from '@/fonts/Fonts'
 import Link from 'next/link'
 import { BsArrowLeftShort } from 'react-icons/bs'
 import Gambetta from './Gambetta'
+import { articles } from '@/lib/articles'
 
 interface HeaderProps {}
 
@@ -22,17 +23,29 @@ const Header: FC<HeaderProps> = ({}) => {
     case '/about':
       title = 'about'
       break
+    case '/blog':
+      title = 'personal blog'
+      break
     case '/hire':
       title = "let's talk, let's do"
       break
     default:
+      title = '404 Not found'
       break
   }
+
+  const article =
+    path.length === 7 &&
+    path.slice(0, 6) === '/blog/' &&
+    articles.some((a) => a.id === path[path.length - 1])
+
+  if (article)
+    title = articles.filter((a) => a.id === path[path.length - 1])[0].header
 
   return (
     <section>
       <div className="flex justify-between items-center">
-        <Title text={title ?? '?'} large />
+        <Title text={title} large />
         <div className="relative [&>div]:hover:opacity-100 [&>div]:hover:-translate-x-2 mb-2">
           <Image
             src="/Selfie.png"
@@ -50,12 +63,12 @@ const Header: FC<HeaderProps> = ({}) => {
       </div>
       {path !== '/' ? (
         <Link
-          href={'/'}
+          href={article ? '/blog' : '/'}
           className="w-full px-1 flex justify-start items-center gap-1 bg-neutral-400 text-cblack hover:brightness-110 transition-all ease-in-out duration-300"
         >
           <BsArrowLeftShort />
           <Gambetta weight small>
-            back to home page
+            back to {article ? 'blog' : 'home page'}
           </Gambetta>
         </Link>
       ) : (

@@ -9,21 +9,20 @@ interface HeaderProps {
   props?: any
 }
 
-const Title: FC<HeaderProps> = ({
-  large,
-  gray,
-  className,
-  props,
-  text,
-}) => {
+const Title: FC<HeaderProps> = ({ large, gray, className, props, text }) => {
   return (
     <h1
       className={`
         ${morganite.className}
+            w-fit
             uppercase
             font-bold
             tracking-wide
-            ${gray ? 'text-neutral-500 dark:text-neutral-400' : 'text-cblack dark:text-cwhite'}
+            ${
+              gray
+                ? 'text-neutral-500 dark:text-neutral-400'
+                : 'text-cblack dark:text-cwhite'
+            }
             ${className}
             ${large ? 'text-7xl' : 'text-4xl'}
         `}

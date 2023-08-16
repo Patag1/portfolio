@@ -31,3 +31,7 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+.wrap-balance {
+  text-wrap: balance;
+}

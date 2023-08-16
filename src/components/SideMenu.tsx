@@ -2,10 +2,15 @@
 
 import { FC, useEffect, useState } from 'react'
 import Button from './ui/Button'
-import { AiOutlineInfoCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import {
+  AiOutlineInfoCircle,
+  AiFillLinkedin,
+  AiFillGithub,
+} from 'react-icons/ai'
 import { BiLogoGmail } from 'react-icons/bi'
 import { SiLinktree } from 'react-icons/si'
-import { MdOutlineWorkOutline } from 'react-icons/md'
+import { RiHomeLine } from 'react-icons/ri'
+import { MdOutlineArticle, MdOutlineWorkOutline } from 'react-icons/md'
 import ThemeBtn from './ui/ThemeBtn'
 import CV from './CV'
 
@@ -27,13 +32,33 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
 
   return (
     <div className="w-7">
-      <div className={`${isFixed && 'fixed top-20'} flex flex-col gap-2 border-cwhite`}>
+      <div
+        className={`${
+          isFixed && 'fixed top-20'
+        } flex flex-col gap-2 border-cwhite`}
+      >
+        <Button
+          icon1={RiHomeLine}
+          icon2={RiHomeLine}
+          iconBool={false}
+          link="/"
+          label="Home"
+          onClick={() => {}}
+        />
         <Button
           icon1={AiOutlineInfoCircle}
           icon2={AiOutlineInfoCircle}
           iconBool={false}
           link="/about"
           label="About"
+          onClick={() => {}}
+        />
+        <Button
+          icon1={MdOutlineArticle}
+          icon2={MdOutlineArticle}
+          iconBool={false}
+          link="/blog"
+          label="Blog"
           onClick={() => {}}
         />
         <Button
@@ -44,7 +69,7 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
           label="Hire"
           onClick={() => {}}
         />
-        <div className='my-1'></div>
+        <div className="my-1"></div>
         <CV />
         <Button
           icon1={AiFillLinkedin}
@@ -78,8 +103,8 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
           label="Linktree"
           onClick={() => {}}
         />
-        <div className='my-1'></div>
-        <ThemeBtn/>
+        <div className="my-1"></div>
+        <ThemeBtn />
       </div>
     </div>
   )
