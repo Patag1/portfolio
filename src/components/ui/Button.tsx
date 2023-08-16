@@ -31,7 +31,7 @@ const Button: FC<ButtonProps> = ({
       {link ? (
         <Link
           href={link}
-          className="w-fit p-1 active:translate-x-1 active:scale-95 transition-all"
+          className="w-fit p-1 active:scale-90 transition-all ease-in-out"
         >
           {iconBool ? <Icon2 /> : <Icon1 />}
         </Link>
@@ -39,24 +39,22 @@ const Button: FC<ButtonProps> = ({
         <a
           href={external}
           target="_blank"
-          className="w-fit p-1 active:translate-x-1 active:scale-95 transition-all"
+          className="w-fit p-1 active:scale-90 transition-all ease-in-out"
         >
           {iconBool ? <Icon2 /> : <Icon1 />}
         </a>
       ) : (
         <button
           className={`w-fit p-1 ${
-            clickable
-              ? 'active:translate-x-1 active:scale-95'
-              : 'cursor-default'
-          } transition-all`}
+            clickable ? 'active:scale-90 active:rotate-45' : 'cursor-default'
+          } transition-all ease-in-out`}
           onClick={onClick}
         >
           {iconBool ? <Icon2 /> : <Icon1 />}
         </button>
       )}
       <span
-        className={`${gambetta.className} font-extrabold absolute w-fit h-fit right-6 top-1/2 bottom-1/2 -translate-y-1/2 opacity-0 bg-black text-cwhite px-2 py-1  transition-all pointer-events-none text-xs whitespace-nowrap`}
+        className={`${gambetta.className} font-extrabold absolute w-fit h-fit right-6 top-1/2 bottom-1/2 -translate-y-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all ease-in-out pointer-events-none text-xs whitespace-nowrap`}
       >
         {label}
       </span>
