@@ -23,7 +23,7 @@ export const projects = [
     image: '/vsnc.png',
     url: '',
     repo: '',
-    desc: 'A full-stack e-commerce made for my sister\'s cosmetic sales. It will create/update/delete users, differentiate between client and admin users, add/remove products to/from cart, make an order, process payments, create/update/delete products and track and display statistics into a dashboard with the retrieved data',
+    desc: "A full-stack e-commerce made for my sister's cosmetic sales. It will create/update/delete users, differentiate between client and admin users, add/remove products to/from cart, make an order, process payments, create/update/delete products and track and display statistics into a dashboard with the retrieved data.",
     techs: [
       'Tailwind CSS',
       'Typescript',
