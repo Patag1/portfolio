@@ -38,7 +38,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
           // height={1}
           className={`absolute left-0 right-0 bottom-0 w-full h-auto object-cover ${
             bgimg ? 'opacity-100' : 'opacity-0'
-          } transition-all ease-in-out duration-300 pointer-events-none`}
+          } border-t-[1px] border-cblack dark:border-cwhite transition-all ease-in-out duration-300 pointer-events-none`}
         />
       )}
       <div className="flex justify-between items-center">
