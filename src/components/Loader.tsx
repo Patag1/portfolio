@@ -23,7 +23,7 @@ const Loader: FC<LoaderProps> = ({}) => {
 
   useEffect(() => {
     setDynamicOpacity('opacity-100')
-    setTimeout(() => changeClass(), 3000)
+    setTimeout(() => changeClass(), 1500)
   }, [])
 
   return (
