@@ -15,11 +15,13 @@ import { MdOutlineArticle, MdOutlineWorkOutline } from 'react-icons/md'
 import ThemeBtn from './ui/ThemeBtn'
 import CV from './CV'
 import { useTranslation } from 'react-i18next'
+import { store } from '@/store/store'
 
 interface SideMenuProps {}
 
 const SideMenu: FC<SideMenuProps> = ({}) => {
   const [isFixed, setIsFixed] = useState(false)
+  const { changeLang } = store()
 
   const [t, i18n] = useTranslation('global')
 
@@ -33,6 +35,11 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+  
+  const handleLang = () => {
+    changeLang()
+    i18n.changeLanguage(t('menu.lang') === 'ES' ? 'EN' : 'ES')
+  }
 
   return (
     <div className="w-7">
@@ -115,9 +122,7 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
           iconBool={false}
           label={t('menu.lang')}
           clickable
-          onClick={() =>
-            i18n.changeLanguage(t('menu.lang') === 'ES' ? 'EN' : 'ES')
-          }
+          onClick={handleLang}
         />
       </div>
     </div>
