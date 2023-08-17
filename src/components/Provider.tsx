@@ -13,12 +13,9 @@ interface ProviderProps {
 }
 
 const Provider: FC<ProviderProps> = ({ children }) => {
-
-  const localLang = navigator.language.split('-')[0].toUpperCase()
-
   i18next.init({
     interpolation: { escapeValue: false },
-    lng: localLang,
+    lng: 'EN',
     resources: {
       ES: {
         global: global_es,
