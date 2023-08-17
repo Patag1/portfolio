@@ -1,9 +1,9 @@
 'use client'
 
-import Quote from '@/components/Quote'
+// import Quote from '@/components/Quote'
 import Gambetta from '@/components/ui/Gambetta'
 import Title from '@/components/ui/Title'
-import { quotes } from '@/lib/quotes'
+// import { quotes } from '@/lib/quotes'
 import Link from 'next/link'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -62,7 +62,7 @@ const Page: FC<pageProps> = ({}) => {
           a todo lo que hago.
           <br />
           <br />
-          Disfruto de la emoción de convertir lo ordinario en algo
+          Disfruto de la emoción de convertir lo ordinario en algo{' '}
           <Gambetta remark weight>
             extraordinario
           </Gambetta>
