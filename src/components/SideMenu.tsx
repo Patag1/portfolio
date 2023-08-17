@@ -9,15 +9,19 @@ import {
 } from 'react-icons/ai'
 import { BiLogoGmail } from 'react-icons/bi'
 import { SiLinktree } from 'react-icons/si'
+import { CiGlobe } from 'react-icons/ci'
 import { RiHomeLine } from 'react-icons/ri'
 import { MdOutlineArticle, MdOutlineWorkOutline } from 'react-icons/md'
 import ThemeBtn from './ui/ThemeBtn'
 import CV from './CV'
+import { useTranslation } from 'react-i18next'
 
 interface SideMenuProps {}
 
 const SideMenu: FC<SideMenuProps> = ({}) => {
   const [isFixed, setIsFixed] = useState(false)
+
+  const [t, i18n] = useTranslation('global')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +70,7 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
           icon2={MdOutlineWorkOutline}
           iconBool={false}
           link="/hire"
-          label="Hire"
+          label={t('menu.hire')}
           onClick={() => {}}
         />
         <div className="my-1"></div>
@@ -105,6 +109,16 @@ const SideMenu: FC<SideMenuProps> = ({}) => {
         />
         <div className="my-1"></div>
         <ThemeBtn />
+        <Button
+          icon1={CiGlobe}
+          icon2={CiGlobe}
+          iconBool={false}
+          label={t('menu.lang')}
+          clickable
+          onClick={() =>
+            i18n.changeLanguage(t('menu.lang') === 'ES' ? 'EN' : 'ES')
+          }
+        />
       </div>
     </div>
   )

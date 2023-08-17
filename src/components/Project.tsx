@@ -7,19 +7,22 @@ import { LiaExternalLinkSquareAltSolid } from 'react-icons/lia'
 import { BiWrench } from 'react-icons/bi'
 import { gambetta } from '@/fonts/Fonts'
 import { Project } from '@/types'
-import Image from 'next/image'
 
 interface ProjectProps {
   project: Project
 }
 
 const Project: FC<ProjectProps> = ({ project }) => {
-  const { name, image, url, repo, desc, techs, status, ud } = project
+  const { name, desc, image, url, repo, techs, status, ud } = project
 
   const [bgimg, setBgimg] = useState(false)
   const [toggleDesc, setToggleDesc] = useState(false)
 
   const shortenedDesc = desc.length > 172 ? `${desc.slice(0, 172)}...` : desc
+
+  const handleImg = () => {
+    setBgimg(!bgimg)
+  }
 
   const handleDesc = () => {
     setToggleDesc(!toggleDesc)
@@ -28,26 +31,20 @@ const Project: FC<ProjectProps> = ({ project }) => {
   return (
     <div
       className={`relative grid grid-cols-1 grid-rows-[auto_1fr] gap-2 p-4 border-[1px] border-cblack dark:border-cwhite bg-cover bg-no-repeat bg-bottom cursor-pointer`}
-      onClick={() => setBgimg(!bgimg)}
+      onClick={handleImg}
     >
       {image && (
         <img
           src={image}
           alt={name}
-          // width={1}
-          // height={1}
-          className={`absolute left-0 right-0 bottom-0 w-full h-auto object-cover ${
+          className={`absolute left-0 right-0 bottom-0 w-full h-auto object-cover w-full h-auto border-t-[1px] border-cblack dark:border-cwhite transition-all ease-in-out duration-300 pointer-events-none ${
             bgimg ? 'opacity-100' : 'opacity-0'
-          } border-t-[1px] border-cblack dark:border-cwhite transition-all ease-in-out duration-300 pointer-events-none`}
+          }`}
         />
       )}
       <div className="flex justify-between items-center">
         <div className="flex justify-center items-center gap-2">
-          <Gambetta
-            weight
-            gray
-            className="hover:underline"
-          >
+          <Gambetta weight gray className="hover:underline">
             {name}
           </Gambetta>
           {status ? (
@@ -75,9 +72,9 @@ const Project: FC<ProjectProps> = ({ project }) => {
             <div
               className={`${gambetta.className} z-30 flex flex-col justify-start items-start font-extrabold absolute w-fit h-fit top-4 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all pointer-events-none text-sm whitespace-nowrap`}
             >
-              {techs.map((t, i) => (
+              {techs.map((tech, i) => (
                 <span key={i} className="text-cwhite">
-                  {t}
+                  {tech}
                 </span>
               ))}
             </div>

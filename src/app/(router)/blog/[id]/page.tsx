@@ -23,7 +23,7 @@ const page: FC<pageProps> = ({ params }) => {
   return (
     <div>
       <div className="flex justify-between items-start gap-6">
-        <Title text={article.title} gray className="wrap-balance" />
+        <Title text={article.title} className="wrap-balance" />
         <Gambetta small gray className="mt-1 whitespace-nowrap">
           {article.date}
         </Gambetta>

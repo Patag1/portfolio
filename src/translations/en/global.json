@@ -1,0 +1,68 @@
+{
+  "header": {
+    "home": "Front-End Developer",
+    "back": {
+      "home": "back to home page",
+      "blog": "back to blog"
+    },
+    "about": "Who am I?",
+    "blog": "Personal blog",
+    "hire": "Let's talk, let's do"
+  },
+  "menu": {
+    "hire": "Hire",
+    "cv": "Download CV",
+    "theme": "Theme",
+    "lang": "EN"
+  },
+  "home": {
+    "section1": {
+      "title": "What do I do?"
+    },
+    "section2": {
+      "title": "Projects",
+      "content": "Please note that most of my most complex projects are private startup initiatives. Don't be fooled!"
+    }
+  },
+  "about": {
+    "section1": {
+      "title": "Hi there"
+    },
+    "section2": {
+      "title": "Technologies",
+      "content": "I specialize using the following technologies. To see all technologies, please visit my"
+    }
+  },
+  "hire": {
+    "section1": {
+      "title": "Let's make your brand glow",
+      "content1": "Contact me by any social media in my",
+      "content2": "or by directly sending an email completing the form down below. Positions I'm most interested in:"
+    },
+    "card": {
+      "type": {
+        "title": "Type",
+        "content": "on-site, hybrid o remote"
+      },
+      "mode": {
+        "title": "Mode",
+        "content": "contract or freelance"
+      }
+    },
+    "card2": {
+      "title": "UX/UI Designer"
+    },
+    "form": {
+      "title": "Send an email",
+      "name": "Full name",
+      "company": "Company",
+      "select": {
+        "title": "Select one",
+        "intern": "Internship",
+        "design": "UX/UI Designer"
+      },
+      "textarea": "Something else I should know?",
+      "submit": "Send"
+    }
+  }
+}

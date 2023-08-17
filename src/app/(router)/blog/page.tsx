@@ -17,9 +17,9 @@ const Page: FC<pageProps> = ({}) => {
           <div className="flex justify-between gap-6">
             <Link
               href={`/blog/${a.id}`}
-              className="hover:text-neutral-500 dark:text-neutral-400 hover:underline transition-all ease-in-out duration-300"
+              className="hover:underline transition-all ease-in-out duration-300"
             >
-              <Title text={a.title} gray className="wrap-balance" />
+              <Title text={a.title} className="wrap-balance" />
             </Link>
             <Gambetta small gray className="mt-1 whitespace-nowrap">
               {a.date}
@@ -38,7 +38,7 @@ const Page: FC<pageProps> = ({}) => {
               <img
                 src={a.image}
                 alt={a.image}
-                className="my-2 w-full aspect-video object-cover border-y-2 border-cblack dark:border-cwhite"
+                className="my-2 w-full aspect-video object-cover border-y-2 border-cblack dark:border-cwhite saturate-0 hover:saturate-100 transition-all duration-300"
               />
             )}
           </div>

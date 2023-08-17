@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { BsArrowLeftShort } from 'react-icons/bs'
 import Gambetta from './Gambetta'
 import { articles } from '@/lib/articles'
+import { useTranslation } from 'react-i18next'
 
 interface HeaderProps {}
 
@@ -16,18 +17,20 @@ const Header: FC<HeaderProps> = ({}) => {
   const path = usePathname()
   let title
 
+  const [t] = useTranslation('global')
+
   switch (path) {
     case '/':
-      title = 'front-end developer'
+      title = t('header.home')
       break
     case '/about':
-      title = 'about'
+      title = t('header.about')
       break
     case '/blog':
-      title = 'personal blog'
+      title = t('header.blog') + ' - EN'
       break
     case '/hire':
-      title = "let's talk, let's do"
+      title = t('header.hire')
       break
     default:
       title = '404 Not found'
@@ -68,7 +71,7 @@ const Header: FC<HeaderProps> = ({}) => {
         >
           <BsArrowLeftShort />
           <Gambetta weight small>
-            back to {article ? 'blog' : 'home page'}
+            {article ? t('header.back.blog') : t('header.back.home')}
           </Gambetta>
         </Link>
       ) : (

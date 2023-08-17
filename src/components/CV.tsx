@@ -3,6 +3,7 @@
 import { FC } from 'react'
 import Button from './ui/Button'
 import { AiOutlineDownload } from 'react-icons/ai'
+import { useTranslation } from 'react-i18next'
 
 interface CVProps {}
 
@@ -19,11 +20,13 @@ const CV: FC<CVProps> = ({}) => {
     document.body.removeChild(link)
   }
 
+  const [t] = useTranslation('global')
+
   return (
     <Button
       icon1={AiOutlineDownload}
       icon2={AiOutlineDownload}
-      label="Download CV"
+      label={t('menu.cv')}
       clickable
       onClick={handleDownload}
     />

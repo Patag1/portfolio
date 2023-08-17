@@ -23,7 +23,7 @@ const Gambetta: FC<GambettaProps> = ({
   return (
     <span
       className={`
-        w-fit italic text-center leading-none
+        w-fit italic text-center leading-none whitespace-nowrap
         ${gambetta.className}
         ${className} 
         ${remark && 'bg-yellowA'}

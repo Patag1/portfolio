@@ -4,12 +4,11 @@ import { morganite } from '@/fonts/Fonts'
 interface HeaderProps {
   text: string
   large?: boolean
-  gray?: boolean
   className?: string
   props?: any
 }
 
-const Title: FC<HeaderProps> = ({ large, gray, className, props, text }) => {
+const Title: FC<HeaderProps> = ({ large, className, props, text }) => {
   return (
     <h1
       className={`
@@ -18,11 +17,8 @@ const Title: FC<HeaderProps> = ({ large, gray, className, props, text }) => {
             uppercase
             font-bold
             tracking-wide
-            ${
-              gray
-                ? 'text-neutral-500 dark:text-neutral-400'
-                : 'text-cblack dark:text-cwhite'
-            }
+            text-cblack
+            dark:text-cwhite
             ${className}
             ${large ? 'text-7xl' : 'text-4xl'}
         `}

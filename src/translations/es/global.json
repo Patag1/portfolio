@@ -1,0 +1,68 @@
+{
+  "header": {
+    "home": "Desarrollador Front-End",
+    "back": {
+      "home": "volver a home",
+      "blog": "volver al blog"
+    },
+    "about": "Quién soy?",
+    "blog": "Blog personal",
+    "hire": "Hablemos, hagamos"
+  },
+  "menu": {
+    "hire": "Contratar",
+    "cv": "Descargar CV",
+    "theme": "Tema",
+    "lang": "ES"
+  },
+  "home": {
+    "section1": {
+      "title": "A qué me dedico?"
+    },
+    "section2": {
+      "title": "Proyectos",
+      "content": "Tené en cuenta que la mayoría de mis proyectos más complejos son iniciativas privadas de startup. No te dejes engañar!"
+    }
+  },
+  "about": {
+    "section1": {
+      "title": "hola"
+    },
+    "section2": {
+      "title": "tecnologías",
+      "content": "Me especializo utilizando las siguientes tecnologías. Para ver el listado de todas, por favor visitá mi"
+    }
+  },
+  "hire": {
+    "section1": {
+      "title": "Hagamos brillar a tu marca",
+      "content1": "Contactame por cualquier red social en mi",
+      "content2": "o enviando directamente un correo electrónico completando el formulario más abajo. Puestos que más me interesan:"
+    },
+    "card": {
+      "type": {
+        "title": "Tipo",
+        "content": "presencial, híbrido o remoto"
+      },
+      "mode": {
+        "title": "Modo",
+        "content": "contrato o freelance"
+      }
+    },
+    "card2": {
+      "title": "Diseñador UX/UI"
+    },
+    "form": {
+      "title": "Enviá un email",
+      "name": "Nombre completo",
+      "company": "Compañía",
+      "select": {
+        "title": "Seleccioná uno",
+        "intern": "Pasantía",
+        "design": "Diseñador UX/UI"
+      },
+      "textarea": "Algo más que tenga que saber?",
+      "submit": "Enviar"
+    }
+  }
+}

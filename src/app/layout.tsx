@@ -4,6 +4,7 @@ import Header from '@/components/ui/Header'
 import SideMenu from '@/components/SideMenu'
 import Loader from '@/components/Loader'
 import Provider from '@/components/Provider'
+import Title from '@/components/ui/Title'
 
 export const metadata = {
   title: 'Augusto S',
@@ -28,6 +29,7 @@ export default function RootLayout({
               <div className="max-w-prose">
                 {children}
                 <div className="my-4 border-b-[1px] border-cblack dark:border-cwhite" />
+                <Title text='Playlist' />
                 <iframe
                   className="rounded-xl"
                   src="https://open.spotify.com/embed/playlist/66cYkZTFtuwp17Q53KR8qn?utm_source=generator"
