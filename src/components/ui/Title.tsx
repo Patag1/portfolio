@@ -15,12 +15,11 @@ const Title: FC<HeaderProps> = ({ large, className, props, text }) => {
         ${morganite.className}
             w-fit
             uppercase
-            font-bold
             tracking-wide
             text-cblack
             dark:text-cwhite
             ${className}
-            ${large ? 'text-7xl' : 'text-4xl'}
+            ${large ? 'text-7xl font-bold' : 'text-4xl font-semibold'}
         `}
       {...props}
     >
