@@ -9,7 +9,7 @@ export const poppins = Poppins({
 
 export const morganite = Morganite({
   src: './Morganite-Medium.woff2',
-  display: 'swap'
+  display: 'swap',
 })
 
 export const gambetta = Gambetta({

@@ -19,7 +19,7 @@ const Title: FC<HeaderProps> = ({ large, className, props, text }) => {
             text-cblack
             dark:text-cwhite
             ${className}
-            ${large ? 'text-7xl font-bold' : 'text-4xl font-semibold'}
+            ${large ? 'lg:text-8xl md:text-7xl text-6xl font-bold' : 'lg:text-5xl md:text-4xl text-3xl font-semibold'}
         `}
       {...props}
     >
