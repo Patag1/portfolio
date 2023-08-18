@@ -58,7 +58,7 @@ const Header: FC<HeaderProps> = ({}) => {
             className="md:w-20 w-16 h-auto aspect-square object-cover saturate-0 hover:saturate-100 hover:scale-105 rounded-full transition-all ease-in-out duration-300"
           />
           <div
-            className={`${gambetta.className} absolute w-fit h-fit opacity-0 top-1/2 bottom-1/2 right-16 -translate-y-1/2 pointer-events-none transition-all whitespace-nowrap text-xs bg-black bg-opacity-75 text-gray-200 px-2 py-1 font-extrabold`}
+            className={`${gambetta.className} absolute w-fit h-fit opacity-0 top-1/2 bottom-1/2 right-16 -translate-y-1/2 pointer-events-none transition-all whitespace-nowrap text-xs bg-black text-gray-200 px-2 py-1 font-extrabold`}
           >
             Augusto Sasso
           </div>
