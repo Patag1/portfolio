@@ -1,8 +1,17 @@
-
 export const projects = [
   {
+    name: 'Task Manager',
+    image: '/tm.avif',
+    url: 'https://www.youtube.com/watch?v=pYzh4RIN1C4',
+    repo: '',
+    desc: "My humble beginnings as a developer completing Harvard's CS50 course by delivering this project. As its title indicates, the project helps users with their everyday tasks: balance managing, BMI caring, and to do list keep up all in one app. Sadly, the repository made by CS50's course is private and cannot share the code, but I do have a video to showcase it.",
+    techs: ['Bootstrap', 'Python', 'Flask', 'SQLite'],
+    status: true,
+    ud: false,
+  },
+  {
     name: 'UDR',
-    image: '/udr.png',
+    image: '/udr.avif',
     url: 'https://udr.vercel.app/',
     repo: 'https://github.com/Patag1/UDR',
     desc: 'Ultimate Dev Roadmap, or UDR, aims to compile a curated list of useful resources for developers, with the purpose of helping them in their learning and professional growth.',
@@ -21,7 +30,7 @@ export const projects = [
   },
   {
     name: 'VS cosmética',
-    image: '/vsnc.png',
+    image: '/vsnc.avif',
     url: '',
     repo: '',
     desc: "A full-stack e-commerce made for my sister's cosmetic sales. It will create/update/delete users, differentiate between client and admin users, add/remove products to/from cart, make an order, process payments, create/update/delete products and track and display statistics into a dashboard with the retrieved data.",
@@ -41,7 +50,7 @@ export const projects = [
   },
   {
     name: 'Newsletter',
-    image: '/news.png',
+    image: '/news.avif',
     url: '',
     repo: 'https://github.com/Patag1/newsletter',
     desc: 'A project I developed as inspiration to an API that I found about news. Keeps people updated on latest news on tech. Users can create an account, like/unlike and save/unsave news, change language of the fetched news and more.',
@@ -61,7 +70,7 @@ export const projects = [
   },
   {
     name: 'Brick',
-    image: '/brick.png',
+    image: '/brick.avif',
     url: '',
     repo: '',
     desc: 'Brick is a groundbreaking startup initiative that revolutionizes the way you connect with skilled professionals with a different approach to client/customer support, implementing awesome new features.',
@@ -79,5 +88,4 @@ export const projects = [
     status: true,
     ud: true,
   },
-  // { name: 'DIYed', url: '', repo: '', desc: 'Brick is a groundbreaking startup initiative that revolutionizes the way you connect with skilled professionals with a different approach to client/customer support, implementing awesome new features. Under development.', status: true },
 ]

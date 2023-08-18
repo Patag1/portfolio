@@ -79,7 +79,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
               ))}
             </div>
           </div>
-          {status || url === '' ? (
+          {url === '' ? (
             <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
               <MdClose className="text-xl" />
               <span
