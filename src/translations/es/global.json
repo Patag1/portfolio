@@ -42,7 +42,7 @@
     "card": {
       "type": {
         "title": "Tipo",
-        "content": "presencial, híbrido o remoto"
+        "content": "oficina, híbrido o remoto"
       },
       "mode": {
         "title": "Modo",

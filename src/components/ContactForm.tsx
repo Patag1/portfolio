@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser'
 import { gambetta } from '@/fonts/Fonts'
 import { toast } from 'sonner'
 import { useTranslation } from 'react-i18next'
+import useSound from 'use-sound'
 
 interface ContactFormProps {}
 
@@ -29,6 +30,8 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
       })
       .catch(() => toast.error('Oh no, something broke! Try again later'))
   }
+
+  const [play, { stop }] = useSound('/audios/hover.mp3')
 
   return (
     <form ref={form} onSubmit={handleSubmit} className="mt-2">
@@ -93,6 +96,8 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
       <button
         type="submit"
         className={`${gambetta.className} w-full py-2 text-cblack dark:text-cwhite text-lg mt-2 mr-2 hover:bg-yellowA hover:text-cblack dark:hover:text-cblack font-extrabold transition-all ease-in-out`}
+        onMouseEnter={() => play()}
+        onMouseLeave={() => stop()}
       >
         {t('hire.form.submit')}
       </button>

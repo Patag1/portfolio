@@ -4,6 +4,7 @@ import { gambetta } from '@/fonts/Fonts'
 import Link from 'next/link'
 import { FC } from 'react'
 import { IconType } from 'react-icons'
+import useSound from 'use-sound'
 
 interface ButtonProps {
   icon1: IconType
@@ -26,8 +27,14 @@ const Button: FC<ButtonProps> = ({
   onClick,
   label,
 }) => {
+  const [play, { stop }] = useSound('/audios/hover.mp3')
+
   return (
-    <div className="relative flex w-fit [&>span]:hover:-translate-x-2 [&>span]:hover:opacity-100">
+    <div
+      className="relative flex w-fit [&>span]:hover:-translate-x-2 [&>span]:hover:opacity-100"
+      onMouseEnter={() => play()}
+      onMouseLeave={() => stop()}
+    >
       {link ? (
         <Link
           href={link}

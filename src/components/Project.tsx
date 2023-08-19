@@ -27,14 +27,10 @@ const Project: FC<ProjectProps> = ({ project }) => {
     setBgimg(!bgimg)
   }
 
-  const [play, { stop }] = useSound('/audios/hover.mp3')
-
   return (
     <div
       className={`relative grid grid-cols-1 grid-rows-[auto_1fr] gap-2 p-4 border-[1px] border-cblack dark:border-cwhite bg-cover bg-no-repeat bg-bottom cursor-pointer`}
       onClick={handleImg}
-      onMouseEnter={() => play()}
-      onMouseLeave={() => stop()}
     >
       {image && (
         <img

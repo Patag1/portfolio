@@ -10,6 +10,7 @@ import { BsArrowLeftShort } from 'react-icons/bs'
 import Gambetta from './Gambetta'
 import { articles } from '@/lib/articles'
 import { useTranslation } from 'react-i18next'
+import useSound from 'use-sound'
 
 interface HeaderProps {}
 
@@ -45,6 +46,8 @@ const Header: FC<HeaderProps> = ({}) => {
   if (article)
     title = articles.filter((a) => a.id === path[path.length - 1])[0].header
 
+  const [play, { stop }] = useSound('/audios/hover.mp3')
+
   return (
     <section>
       <div className="flex justify-between items-center">
@@ -68,6 +71,8 @@ const Header: FC<HeaderProps> = ({}) => {
         <Link
           href={article ? '/blog' : '/'}
           className="w-full px-1 flex justify-start items-center gap-1 bg-neutral-400 text-cblack hover:brightness-110 transition-all ease-in-out duration-300"
+          onMouseEnter={() => play()}
+          onMouseLeave={() => stop()}
         >
           <BsArrowLeftShort />
           <Gambetta weight small>
