@@ -36,7 +36,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
         <img
           src={image}
           alt={name}
-          className={`absolute left-0 right-0 bottom-0 w-full h-auto object-cover w-full h-auto border-t-[1px] border-cblack dark:border-cwhite transition-all ease-in-out duration-300 pointer-events-none ${
+          className={`absolute left-0 right-0 bottom-0 w-full h-auto object-cover border-t-[1px] border-cblack dark:border-cwhite transition-all ease-in-out duration-300 pointer-events-none ${
             bgimg ? 'opacity-100' : 'opacity-0'
           }`}
         />
