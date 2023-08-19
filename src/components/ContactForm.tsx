@@ -41,7 +41,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
             placeholder={t('hire.form.name')}
             className="w-full p-1 bg-transparent focus:p-4 focus:border-b-2 border-cblack dark:border-cwhite focus:outline-none transition-all ease-in-out duration-300"
           />
-          <span className="absolute top-0 -right-4 text-rose-400">*</span>
+          <span className="absolute top-0 right-0 text-rose-400">*</span>
         </div>
         <div className="relative">
           <input
@@ -51,7 +51,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
             placeholder="Email"
             className="w-full p-1 bg-transparent focus:p-4 focus:border-b-2 border-cblack dark:border-cwhite focus:outline-none transition-all ease-in-out duration-300"
           />
-          <span className="absolute top-0 -right-4 text-rose-400">*</span>
+          <span className="absolute top-0 right-0 text-rose-400">*</span>
         </div>
         <div className="relative">
           <input
@@ -61,7 +61,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
             placeholder={t('hire.form.company')}
             className="w-full p-1 bg-transparent focus:p-4 focus:border-b-2 border-cblack dark:border-cwhite focus:outline-none transition-all ease-in-out duration-300"
           />
-          <span className="absolute top-0 -right-4 text-rose-400">*</span>
+          <span className="absolute top-0 right-0 text-rose-400">*</span>
         </div>
         <div className="relative">
           <select
@@ -80,7 +80,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
             <option value="freelance">Freelance</option>
             <option value="recruiter">{t('hire.form.select.design')}</option>
           </select>
-          <span className="absolute top-0 -right-4 text-rose-400">*</span>
+          <span className="absolute top-0 right-0 text-rose-400">*</span>
         </div>
         <textarea
           name="message"
