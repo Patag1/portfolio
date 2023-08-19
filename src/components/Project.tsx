@@ -7,25 +7,23 @@ import { LiaExternalLinkSquareAltSolid } from 'react-icons/lia'
 import { BiWrench } from 'react-icons/bi'
 import { gambetta } from '@/fonts/Fonts'
 import { Project } from '@/types'
+import { useTranslation } from 'react-i18next'
 
 interface ProjectProps {
   project: Project
 }
 
 const Project: FC<ProjectProps> = ({ project }) => {
-  const { name, desc, image, url, repo, techs, status, ud } = project
+  const { name, desc, descEN, image, url, repo, techs, status, ud } = project
 
   const [bgimg, setBgimg] = useState(false)
-  const [toggleDesc, setToggleDesc] = useState(false)
 
-  const shortenedDesc = desc.length > 172 ? `${desc.slice(0, 172)}...` : desc
+  const [t] = useTranslation('global')
+
+  const translatedDesc = t('menu.lang') === 'EN' ? descEN : desc
 
   const handleImg = () => {
     setBgimg(!bgimg)
-  }
-
-  const handleDesc = () => {
-    setToggleDesc(!toggleDesc)
   }
 
   return (
@@ -53,7 +51,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
               <span
                 className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1  transition-all pointer-events-none text-xs whitespace-nowrap`}
               >
-                Private
+                {t('menu.lang') === 'EN' ? 'Private' : 'Privado'}
               </span>
             </div>
           ) : (
@@ -85,7 +83,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
               <span
                 className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all pointer-events-none text-xs whitespace-nowrap`}
               >
-                No link
+                {t('menu.lang') === 'EN' ? 'No link' : 'Sin link'}
               </span>
             </div>
           ) : (
@@ -104,17 +102,8 @@ const Project: FC<ProjectProps> = ({ project }) => {
           className={`${
             bgimg && 'opacity-0 pointer-events-none'
           } transition-all ease-in-out duration-300`}
-          onClick={(e) => e.stopPropagation()}
         >
-          {toggleDesc ? desc : shortenedDesc}
-          {desc.length > 172 && (
-            <span
-              className="p-1 hover:underline text-cyan-400 text-xs whitespace-nowrap"
-              onClick={handleDesc}
-            >
-              Read {toggleDesc ? 'less' : 'more'}
-            </span>
-          )}
+          {translatedDesc}
         </p>
         <span
           className={`absolute bottom-0 right-0 w-2 aspect-square rounded-full ${

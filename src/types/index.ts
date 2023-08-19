@@ -1,6 +1,7 @@
 export type Project = {
   name: string
   desc: string
+  descEN: string
   image?: string
   url: string
   repo: string
