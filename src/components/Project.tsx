@@ -1,13 +1,13 @@
 'use client'
 
 import { FC, useState } from 'react'
-import Gambetta from './ui/Gambetta'
 import { MdClose } from 'react-icons/md'
 import { LiaExternalLinkSquareAltSolid } from 'react-icons/lia'
 import { BiWrench } from 'react-icons/bi'
 import { gambetta } from '@/fonts/Fonts'
 import { Project } from '@/types'
 import { useTranslation } from 'react-i18next'
+import Title from './ui/Title'
 
 interface ProjectProps {
   project: Project
@@ -40,13 +40,11 @@ const Project: FC<ProjectProps> = ({ project }) => {
           }`}
         />
       )}
-      <div className="flex justify-between items-center">
-        <div className="flex justify-center items-center gap-2">
-          <Gambetta weight gray className="hover:underline">
-            {name}
-          </Gambetta>
+      <div className="flex justify-between items-start">
+        <div className="flex justify-center items-end gap-4">
+          <Title text={name} />
           {status ? (
-            <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
+            <div className="mb-1 relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
               <p className="text-xs text-neutral-400">github</p>
               <span
                 className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all ease-in-out pointer-events-none text-xs whitespace-nowrap`}
@@ -58,7 +56,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
             <a
               href={repo}
               target="_blank"
-              className="text-xs text-cyan-400 hover:underline"
+              className="mb-1 text-xs text-cyan-400 hover:underline"
             >
               github
             </a>
