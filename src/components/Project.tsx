@@ -27,7 +27,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
     setBgimg(!bgimg)
   }
 
-  const [play, { stop }] = useSound('/audios/hover.wav')
+  const [play, { stop }] = useSound('/audios/hover.mp3')
 
   return (
     <div
