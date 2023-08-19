@@ -113,34 +113,93 @@ const Page: FC<pageProps> = ({}) => {
       </p>
       <br />
       <div className="grid md:grid-cols-3 grid-cols-1 grid-rows-auto gap-6">
-        <div className="p-4 border-[1px] border-cblack dark:border-cwhite">
-          <Gambetta gray weight large>
-            Front-end
-          </Gambetta>
-          <br />
+        <div
+          className="
+            p-4
+            bg-cwhite
+            dark:bg-cblack
+            hover:bg-yellowA
+            dark:hover:bg-yellowA
+            hover:text-cblack
+            dark:hover:text-cblack
+            hover:border-transparent
+            dark:hover:border-transparent
+            border-[1px]
+            border-cblack
+            dark:border-cwhite
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          <Title text="Front-end" />
           <ul>
-            <li>Typescript</li>
-            <li>Tailwind CSS</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Zustand</li>
+            <li>
+              <p>Typescript</p>
+            </li>
+            <li>
+              <p>Tailwind CSS</p>
+            </li>
+            <li>
+              <p>React</p>
+            </li>
+            <li>
+              <p>Next.js</p>
+            </li>
+            <li>
+              <p>Zustand</p>
+            </li>
           </ul>
         </div>
-        <div className="p-4 border-[1px] border-cblack dark:border-cwhite">
-          <Gambetta gray weight large>
-            Back-end
-          </Gambetta>
-          <br />
+        <div
+          className="
+            p-4
+            bg-cwhite
+            dark:bg-cblack
+            hover:bg-yellowA
+            dark:hover:bg-yellowA
+            hover:text-cblack
+            dark:hover:text-cblack
+            hover:border-transparent
+            dark:hover:border-transparent
+            border-[1px]
+            border-cblack
+            dark:border-cwhite
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          <Title text="Back-end" />
           <ul>
-            <li>Zod</li>
-            <li>Node.js</li>
+            <li>
+              <p>Zod</p>
+            </li>
+            <li>
+              <p>Node.js</p>
+            </li>
           </ul>
         </div>
-        <div className="p-4 border-[1px] border-cblack dark:border-cwhite">
-          <Gambetta gray weight large>
-            Databases
-          </Gambetta>
-          <br />
+        <div
+          className="
+            p-4
+            bg-cwhite
+            dark:bg-cblack
+            hover:bg-yellowA
+            dark:hover:bg-yellowA
+            hover:text-cblack
+            dark:hover:text-cblack
+            hover:border-transparent
+            dark:hover:border-transparent
+            border-[1px]
+            border-cblack
+            dark:border-cwhite
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          <Title text="Databases" />
           <p>PostgreSQL</p>
         </div>
       </div>

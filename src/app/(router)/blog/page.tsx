@@ -38,7 +38,7 @@ const Page: FC<pageProps> = ({}) => {
               <img
                 src={a.image}
                 alt={a.image}
-                className="my-2 w-full aspect-video object-cover border-y-2 border-cblack dark:border-cwhite saturate-0 hover:saturate-100 transition-all duration-300"
+                className="my-2 w-full aspect-video object-cover border-y-2 border-cblack dark:border-cwhite saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out"
               />
             )}
           </div>

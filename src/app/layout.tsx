@@ -19,7 +19,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-cwhite dark:bg-cblack text-cblack dark:text-cwhite transition-all overflow-hidden`}
+        className={`
+          ${poppins.className}
+          bg-cwhite
+          dark:bg-cblack
+          text-cblack
+          dark:text-cwhite
+          transition-all
+          ease-in-out
+          duration-300
+          overflow-hidden
+          select-none
+        `}
       >
         <Provider>
           <main className="w-fit mx-auto px-6 py-2 my-32 grid grid-rows-[min-content_1fr] grid-cols-1 md:border-x-2 border-cblack dark:border-cwhite">
@@ -29,9 +40,9 @@ export default function RootLayout({
               <div className="max-w-prose">
                 {children}
                 <div className="my-4 border-b-[1px] border-cblack dark:border-cwhite" />
-                <Title text='Playlist' />
+                <Title text="Playlist" />
                 <iframe
-                  className="rounded-xl"
+                  className="rounded-xl mt-2"
                   src="https://open.spotify.com/embed/playlist/66cYkZTFtuwp17Q53KR8qn?utm_source=generator"
                   width="100%"
                   height="352"

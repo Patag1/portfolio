@@ -26,15 +26,38 @@ const Page: FC<pageProps> = ({}) => {
         {t('hire.section1.content2')}
       </p>
       <br />
-      <ul className="grid md:grid-cols-2 grid-cols-1 grid-rows-auto gap-4">
-        <li className="p-4 flex flex-col gap-2 border-[1px] border-cblack dark:border-cwhite">
-          <Gambetta weight gray large>
-            Front-End
-          </Gambetta>
+      <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-auto gap-4">
+        <div
+          className="
+            p-4
+            flex
+            flex-col
+            gap-2
+            hover:bg-yellowA
+            dark:hover:bg-yellowA
+            border-[1px]
+            border-cblack
+            dark:border-cwhite
+            hover:border-transparent
+            dark:hover:border-transparent
+            hover:text-cblack
+            dark:hover:text-cblack
+            [&>div>div>div>span]:hover:text-cblack
+            [&>div>div>div>span]:dark:hover:text-cblack
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          <Title text="Front-end" />
           <div>
             <div className="flex gap-1">
               <div>
-                <Gambetta weight remark>
+                <Gambetta
+                  weight
+                  gray
+                  className="dark:text-cwhite transition-all duration-300 ease-in-out"
+                >
                   {t('hire.card.type.title')}
                 </Gambetta>
                 :
@@ -43,7 +66,11 @@ const Page: FC<pageProps> = ({}) => {
             </div>
             <div className="flex gap-1">
               <div>
-                <Gambetta weight remark>
+                <Gambetta
+                  weight
+                  gray
+                  className="dark:text-cwhite transition-all duration-300 ease-in-out"
+                >
                   {t('hire.card.mode.title')}
                 </Gambetta>
                 :
@@ -51,15 +78,38 @@ const Page: FC<pageProps> = ({}) => {
               <p className="wrap-balance">{t('hire.card.mode.content')}</p>
             </div>
           </div>
-        </li>
-        <li className="p-4 flex flex-col gap-2 border-[1px] border-cblack dark:border-cwhite">
-          <Gambetta weight gray large>
-            {t('hire.card2.title')}
-          </Gambetta>
+        </div>
+        <div
+          className="
+            p-4
+            flex
+            flex-col
+            gap-2
+            hover:bg-yellowA
+            dark:hover:bg-yellowA
+            border-[1px]
+            border-cblack
+            dark:border-cwhite
+            hover:border-transparent
+            dark:hover:border-transparent
+            hover:text-cblack
+            dark:hover:text-cblack
+            [&>div>div>div>span]:hover:text-cblack
+            [&>div>div>div>span]:dark:hover:text-cblack
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          <Title text={t('hire.card2.title')} />
           <div>
             <div className="flex gap-1">
               <div>
-                <Gambetta weight remark>
+                <Gambetta
+                  weight
+                  gray
+                  className="dark:text-cwhite transition-all duration-300 ease-in-out"
+                >
                   {t('hire.card.type.title')}
                 </Gambetta>
                 :
@@ -68,7 +118,11 @@ const Page: FC<pageProps> = ({}) => {
             </div>
             <div className="flex gap-1">
               <div>
-                <Gambetta weight remark>
+                <Gambetta
+                  weight
+                  gray
+                  className="dark:text-cwhite transition-all duration-300 ease-in-out"
+                >
                   {t('hire.card.mode.title')}
                 </Gambetta>
                 :
@@ -76,8 +130,8 @@ const Page: FC<pageProps> = ({}) => {
               <p className="wrap-balance">{t('hire.card.mode.content')}</p>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
       <br />
       <Title text={t('hire.form.title')} />
       <ContactForm />

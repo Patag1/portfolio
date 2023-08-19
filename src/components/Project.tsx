@@ -49,7 +49,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
             <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
               <p className="text-xs text-neutral-400">github</p>
               <span
-                className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1  transition-all pointer-events-none text-xs whitespace-nowrap`}
+                className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all ease-in-out pointer-events-none text-xs whitespace-nowrap`}
               >
                 {t('menu.lang') === 'EN' ? 'Private' : 'Privado'}
               </span>
@@ -68,7 +68,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
           <div className="relative [&>div]:hover:opacity-100 [&>div]:hover:translate-y-2">
             <BiWrench />
             <div
-              className={`${gambetta.className} z-30 flex flex-col justify-start items-start font-extrabold absolute w-fit h-fit top-4 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all pointer-events-none text-sm whitespace-nowrap`}
+              className={`${gambetta.className} z-30 flex flex-col justify-start items-start font-extrabold absolute w-fit h-fit top-4 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all ease-in-out pointer-events-none text-sm whitespace-nowrap`}
             >
               {techs.map((tech, i) => (
                 <span key={i} className="text-cwhite">
@@ -81,7 +81,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
             <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
               <MdClose className="text-xl" />
               <span
-                className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all pointer-events-none text-xs whitespace-nowrap`}
+                className={`${gambetta.className} font-extrabold absolute w-fit h-fit -top-6 left-1/2 right-1/2 -translate-x-1/2 opacity-0 bg-black text-cwhite px-2 py-1 transition-all ease-in-out pointer-events-none text-xs whitespace-nowrap`}
               >
                 {t('menu.lang') === 'EN' ? 'No link' : 'Sin link'}
               </span>
@@ -90,7 +90,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
             <a
               href={url}
               target="_blank"
-              className="w-fit h-fit p-1 hover:translate-x-1 hover:-translate-y-1 transition-all"
+              className="w-fit h-fit p-1 hover:translate-x-1 hover:-translate-y-1 transition-all ease-in-out"
             >
               <LiaExternalLinkSquareAltSolid className="text-xl" />
             </a>

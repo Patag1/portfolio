@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         ...colors,
         cwhite: '#FAFAFA',
+        acqua: '#0DE7E0',
         yellowA: '#ECE900',
         cblack: '#151515',
       },
