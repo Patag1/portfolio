@@ -57,7 +57,7 @@
       "name": "Full name",
       "company": "Company",
       "select": {
-        "title": "Select one",
+        "title": "What do you need me for?",
         "intern": "Internship",
         "design": "UX/UI Designer"
       },
