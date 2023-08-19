@@ -31,7 +31,7 @@ const Button: FC<ButtonProps> = ({
       {link ? (
         <Link
           href={link}
-          className="w-fit p-1 active:scale-90 transition-all ease-in-out"
+          className="w-fit p-1 hover:scale-110 active:scale-90 transition-all ease-in-out"
         >
           {iconBool ? <Icon2 /> : <Icon1 />}
         </Link>
@@ -39,13 +39,13 @@ const Button: FC<ButtonProps> = ({
         <a
           href={external}
           target="_blank"
-          className="w-fit p-1 active:scale-90 transition-all ease-in-out"
+          className="w-fit p-1 hover:scale-110 active:scale-90 transition-all ease-in-out"
         >
           {iconBool ? <Icon2 /> : <Icon1 />}
         </a>
       ) : (
         <button
-          className={`w-fit p-1 ${
+          className={`w-fit p-1 hover:scale-110 ${
             clickable ? 'active:scale-90 active:rotate-45' : 'cursor-default'
           } transition-all ease-in-out`}
           onClick={onClick}

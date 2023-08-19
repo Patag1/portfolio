@@ -8,6 +8,7 @@ import { gambetta } from '@/fonts/Fonts'
 import { Project } from '@/types'
 import { useTranslation } from 'react-i18next'
 import Title from './ui/Title'
+import { useSound } from 'use-sound'
 
 interface ProjectProps {
   project: Project
@@ -26,10 +27,14 @@ const Project: FC<ProjectProps> = ({ project }) => {
     setBgimg(!bgimg)
   }
 
+  const [play, { stop }] = useSound('/audios/hover.wav')
+
   return (
     <div
       className={`relative grid grid-cols-1 grid-rows-[auto_1fr] gap-2 p-4 border-[1px] border-cblack dark:border-cwhite bg-cover bg-no-repeat bg-bottom cursor-pointer`}
       onClick={handleImg}
+      onMouseEnter={() => play()}
+      onMouseLeave={() => stop()}
     >
       {image && (
         <img
@@ -41,7 +46,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
         />
       )}
       <div className="flex justify-between items-start">
-        <div className="flex justify-center items-end gap-4">
+        <div className="flex justify-center items-end gap-2">
           <Title text={name} />
           {status ? (
             <div className="mb-1 relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-2">
