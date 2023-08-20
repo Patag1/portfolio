@@ -16,7 +16,7 @@ interface ProjectProps {
 }
 
 const Project: FC<ProjectProps> = ({ project }) => {
-  const { name, url, techs, status } = project
+  const { name, repo, url, techs, status } = project
 
   const { openModal } = store()
 
@@ -62,7 +62,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
               </span>
             </div>
           ) : (
-            <a href={url} target="_blank" className="w-fit h-fit">
+            <a href={repo} target="_blank" className="w-fit h-fit">
               <AiFillGithub className="text-xl" />
             </a>
           )}
