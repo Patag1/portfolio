@@ -11,7 +11,7 @@ interface storeProps {
 }
 
 export const store = create<storeProps>((set, get) => ({
-  lang: 'EN',
+  lang: 'ES',
   changeLang: () => set({ lang: get().lang === 'EN' ? 'ES' : 'EN' }),
   modalData: null,
   modalOpen: false,
