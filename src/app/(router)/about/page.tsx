@@ -14,7 +14,7 @@ interface pageProps {}
 const Page: FC<pageProps> = ({}) => {
   const [t] = useTranslation('global')
 
-  const [play, { stop }] = useSound('/audios/hover1.png')
+  const [play, { stop }] = useSound('/audios/hover1.mp3')
 
   return (
     <>
