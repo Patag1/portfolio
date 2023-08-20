@@ -52,7 +52,7 @@ const Header: FC<HeaderProps> = ({}) => {
     <section>
       <div className="flex justify-between items-center">
         <Title text={title} large />
-        <div className="relative [&>div]:hover:opacity-100 md:[&>div]:hover:-translate-x-8 [&>div]:hover:-translate-x-2 mb-2">
+        <div className="relative [&>div]:hover:opacity-100 md:[&>div]:hover:-translate-x-6 [&>div]:hover:-translate-x-2 mb-2">
           <Image
             src="/selfie.avif"
             alt="profile-pic"
