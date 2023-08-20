@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="preload" href="/audios/hover.mp3" as="audio" />
+        <link rel="preload" href="/audios/hover1.mp3" as="audio" />
         <meta name="view-transition" content="same-origin" />
       </Head>
       <body
