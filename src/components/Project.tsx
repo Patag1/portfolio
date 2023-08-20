@@ -39,7 +39,10 @@ const Project: FC<ProjectProps> = ({ project }) => {
     >
       <div className="flex justify-between items-start">
         <Title text={name} />
-        <div className="flex justify-end items-center gap-2">
+        <div
+          className="flex justify-end items-center gap-2"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="relative [&>div]:hover:opacity-100 [&>div]:hover:translate-y-2">
             <BiWrench />
             <div
