@@ -5,11 +5,14 @@ import Gambetta from '@/components/ui/Gambetta'
 import Title from '@/components/ui/Title'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import useSound from 'use-sound'
 
 interface pageProps {}
 
 const Page: FC<pageProps> = ({}) => {
   const [t] = useTranslation('global')
+
+  const [play, {stop}] = useSound('/audios/hover1.mp3')
 
   return (
     <>
@@ -48,6 +51,8 @@ const Page: FC<pageProps> = ({}) => {
             duration-300
             ease-in-out
           "
+          onMouseEnter={() => play()}
+          onMouseLeave={() => stop()}
         >
           <Title text="Front-end" />
           <div>
@@ -100,6 +105,8 @@ const Page: FC<pageProps> = ({}) => {
             duration-300
             ease-in-out
           "
+          onMouseEnter={() => play()}
+          onMouseLeave={() => stop()}
         >
           <Title text={t('hire.card2.title')} />
           <div>

@@ -5,10 +5,11 @@ import SideMenu from '@/components/SideMenu'
 import Loader from '@/components/Loader'
 import Provider from '@/components/Provider'
 import Title from '@/components/ui/Title'
+import Head from 'next/head'
 
 export const metadata = {
-  title: 'Augusto S',
-  description: 'My personal portfolio',
+  title: 'AS | portfolio',
+  description: 'Made with love and style by Augusto Sasso',
 }
 
 export default function RootLayout({
@@ -18,6 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="preload" href="/audios/hover.mp3" as="audio" />
+        <meta name="view-transition" content="same-origin" />
+      </Head>
       <body
         className={`
           ${poppins.className}

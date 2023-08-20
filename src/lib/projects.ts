@@ -34,7 +34,7 @@ export const projects = [
     name: 'VS cosmética',
     image: '/vsnc.avif',
     url: '',
-    repo: '',
+    repo: 'https://github.com/Patag1/natural-cosmetica',
     desc: 'Un e-commerce full-stack hecho para ventas de cosméticos de mi hermana. Este proyecto en particular realmente desafió mis habilidades. Vale la pena porque pude ayudar a mi hermana!',
     descEN: "A full-stack e-commerce made for my sister's cosmetic sales. This project in particular really challenged my skills. It\'s worth it to help my sister out though!",
     techs: [

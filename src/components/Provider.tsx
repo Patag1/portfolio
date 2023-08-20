@@ -8,6 +8,7 @@ import i18next from 'i18next'
 import global_es from '@/translations/es/global.json'
 import global_en from '@/translations/en/global.json'
 import { store } from '@/store/store'
+import Modal from './ui/Modal'
 
 interface ProviderProps {
   children: React.ReactNode
@@ -34,6 +35,7 @@ const Provider: FC<ProviderProps> = ({ children }) => {
       <I18nextProvider i18n={i18next}>
         {children}
         <Toaster position="bottom-right" />
+        <Modal />
       </I18nextProvider>
     </ThemeProvider>
   )
