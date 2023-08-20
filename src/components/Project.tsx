@@ -32,7 +32,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
 
   return (
     <div
-      className="relative grid grid-cols-1 grid-rows-[auto_1fr] gap-2 p-4 pb-1 border-[1px] border-cblack dark:border-cwhite hover:bg-yellowA hover:border-transparent dark:hover:border-transparent hover:text-black cursor-pointer transition-all ease-in-out duration-300"
+      className="relative grid grid-cols-1 grid-rows-[auto_1fr] gap-2 p-4 pb-0 border-[1px] border-cblack dark:border-cwhite hover:bg-yellowA hover:border-transparent dark:hover:border-transparent hover:text-black cursor-pointer transition-all ease-in-out duration-300"
       onClick={handleModal}
       onMouseEnter={() => play()}
       onMouseLeave={() => stop()}

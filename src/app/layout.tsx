@@ -8,7 +8,7 @@ import Title from '@/components/ui/Title'
 import Head from 'next/head'
 
 export const metadata = {
-  title: 'AS | portfolio',
+  title: 'Augusto S',
   description: 'Made with love and style by Augusto Sasso',
 }
 
@@ -55,6 +55,8 @@ export default function RootLayout({
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
                 ></iframe>
+                <div className="w-full mt-4 mb-2 border-b-[1px] border-cblack dark:border-cwhite" />
+                <p className="text-sm">© 2023 Augusto Sasso</p>
               </div>
               <SideMenu />
             </article>
