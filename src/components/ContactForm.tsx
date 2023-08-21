@@ -71,7 +71,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
             required
             name="job"
             defaultValue=""
-            className="w-full px-0 p-1 bg-transparent focus:p-4 focus:border-b-2 border-cblack dark:border-cwhite focus:outline-none text-[#9CA3AF] focus:text-cblack transition-all ease-in-out duration-300"
+            className="w-full p-1 bg-transparent focus:p-4 focus:border-b-2 border-cblack dark:border-cwhite focus:outline-none text-[#9CA3AF] focus:text-cblack transition-all ease-in-out duration-300"
           >
             <option value="" disabled>
               {t('hire.form.select.title')}
