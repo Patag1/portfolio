@@ -36,17 +36,6 @@ export const projects = [
     ud: false,
   },
   {
-    name: 'Solid.js to do',
-    image: '/solidjstodo.avif',
-    url: 'https://solidjs-todo-two.vercel.app/',
-    repo: 'https://github.com/Patag1/solidjsapp',
-    desc: 'Una sencilla aplicación de lista de tareas para aprender los conceptos básicos de Solid.js. Solid.js es un potencial reemplazo de React, comparte mucho de la estructura de React pero con importantes mejoras de rendimiento que prometen mucho para hacer aplicaciones de alto rendimiento.',
-    descEN: 'A simple To-do list app to learn Solid.js basics. Solid.js is a potential React killer, resembling a lot to React\'s layout but with major performance enhacements that promise a lot towards making snappy apps',
-    techs: ['CSS Modules', 'Solid.js', 'Vite'],
-    status: false,
-    ud: false,
-  },
-  {
     name: 'UDR',
     image: '/udr.avif',
     url: 'https://udr.vercel.app/',
