@@ -1,41 +1,5 @@
 export const projects = [
   {
-    name: 'Solid.js to do',
-    image: '/solidjstodo.avif',
-    url: 'https://solidjs-todo-two.vercel.app/',
-    repo: 'https://github.com/Patag1/solidjsapp',
-    desc: 'Una sencilla aplicación de lista de tareas para aprender los conceptos básicos de Solid.js. Solid.js es un potencial reemplazo de React, comparte mucho de la estructura de React pero con importantes mejoras de rendimiento que prometen mucho para hacer aplicaciones de alto rendimiento.',
-    descEN:
-      "A simple To-do list app to learn Solid.js basics. Solid.js is a potential React killer, resembling a lot to React's layout but with major performance enhacements that promise a lot towards making snappy apps",
-    techs: ['CSS Modules', 'Solid.js', 'Vite'],
-    status: false,
-    ud: false,
-  },
-  {
-    name: 'Svelteweather',
-    image: '/svelteweather.avif',
-    url: 'https://svelteweather-4a3i96foo-patag1.vercel.app/',
-    repo: 'https://github.com/Patag1/svelteweather',
-    desc: 'Una simple aplicación del clima, desarrollada para aprender los conceptos básicos de SvelteKit, experimentando con layouts, gestión de estados, rutas api, fetching de datos y renderizado dinámico de datos. Svelte es un framework de Javascript de alto rendimiento que consiguió gran popularidad entre los programadores por su simplicidad y resultados.',
-    descEN:
-      'A simple weather app, developed to learn SvelteKit basics, experimenting with layouts, state management, api routes, data fetching and dynamic data rendering. Svelte is a high performant javascript framework that has sky-rocketing popularity among programmers for its simplicity and results',
-    techs: ['CSS', 'Typescript', 'Svelte', 'SvelteKit'],
-    status: false,
-    ud: false,
-  },
-  {
-    name: 'Task Manager',
-    image: '/tm.avif',
-    url: 'https://www.youtube.com/watch?v=pYzh4RIN1C4',
-    repo: '',
-    desc: 'Completé el curso CS50 de Harvard al entregar este proyecto. Ayuda a los usuarios con gestión de saldo, cuidado del IMC y mantenimiento de tareas con una to do list. El repo de CS50 es privado, pero muestro el proyecto en un video',
-    descEN:
-      "Completed Harvard's CS50 course by delivering this project. It helps users with balance managing, BMI caring, and to do list keep up. CS50's repo is private, but I showcase the project in a video",
-    techs: ['Bootstrap', 'Python', 'Jinja', 'Flask', 'SQLite'],
-    status: true,
-    ud: false,
-  },
-  {
     name: 'UDR',
     image: '/udr.avif',
     url: 'https://udr.vercel.app/',
@@ -57,13 +21,49 @@ export const projects = [
     ud: false,
   },
   {
-    name: 'VS cosmética',
-    image: '/vsnc.avif',
-    url: '',
-    repo: 'https://github.com/Patag1/natural-cosmetica',
-    desc: 'Un e-commerce full-stack hecho para ventas de cosméticos de mi hermana. Este proyecto en particular realmente desafió mis habilidades. Vale la pena porque pude ayudar a mi hermana!',
+    name: 'Solid.js to do',
+    image: '/solidjstodo.avif',
+    url: 'https://solidjs-todo-two.vercel.app/',
+    repo: 'https://github.com/Patag1/solidjsapp',
+    desc: 'Una sencilla aplicación de lista de tareas para aprender los conceptos básicos de Solid.js. Solid.js es un potencial reemplazo de React, comparte mucho de la estructura de React pero con importantes mejoras de rendimiento que prometen mucho para hacer aplicaciones de alto rendimiento.',
     descEN:
-      "A full-stack e-commerce made for my sister's cosmetic sales. This project in particular really challenged my skills. It's worth it to help my sister out though!",
+      "A simple To-do list app to learn Solid.js basics. Solid.js is a potential React killer, resembling a lot to React's layout but with major performance enhacements that promise a lot towards making snappy apps",
+    techs: ['CSS Modules', 'Solid.js', 'Vite'],
+    status: false,
+    ud: false,
+  },
+  {
+    name: 'Svelteweather',
+    image: '/svelteweather.avif',
+    url: 'https://svelteweather-4a3i96foo-patag1.vercel.app/',
+    repo: 'https://github.com/Patag1/svelteweather',
+    desc: 'Una simple aplicación del clima, desarrollada para aprender los conceptos básicos de SvelteKit, testeando layouts, gestión de estados, rutas api, fetching de datos y renderizado dinámico de datos. Svelte es un framework de Javascript de alto rendimiento, ganó gran popularidad por su simplicidad y optimizaciones.',
+    descEN:
+      'A simple weather app, developed to learn SvelteKit basics, testing layouts, state management, api routes, data fetching and dynamic data rendering. Svelte is a high performant javascript framework, it has recently gained a lot of popularity for its simplicity and optimizations',
+    techs: ['CSS', 'Typescript', 'Svelte', 'SvelteKit'],
+    status: false,
+    ud: false,
+  },
+  {
+    name: 'Task Manager',
+    image: '/tm.avif',
+    url: 'https://www.youtube.com/watch?v=pYzh4RIN1C4',
+    repo: '',
+    desc: 'Completé el curso CS50 de Harvard al entregar este proyecto. Ayuda a los usuarios con gestión de saldo, cuidado del IMC y mantenimiento de tareas con una to do list. El repo de CS50 es privado, pero muestro el proyecto en un video',
+    descEN:
+      "Completed Harvard's CS50 course by delivering this project. It helps users with balance managing, BMI caring, and to do list keep up. CS50's repo is private, but I showcase the project in a video",
+    techs: ['Bootstrap', 'Python', 'Jinja', 'Flask', 'SQLite'],
+    status: true,
+    ud: false,
+  },
+  {
+    name: 'Newsletter',
+    image: '/news.avif',
+    url: '',
+    repo: 'https://github.com/Patag1/newsletter',
+    desc: 'Actualiza a las personas las últimas noticias de tecnología. Se puede crear una cuenta, dar like/dislike, guardar/sacar noticias y cambiar el idioma de las noticias.',
+    descEN:
+      'Keeps people updated on latest news on tech. Users can create an account, like/dislike, save/unsave news and change language of news.',
     techs: [
       'Tailwind CSS',
       'Typescript',
@@ -79,13 +79,13 @@ export const projects = [
     ud: true,
   },
   {
-    name: 'Newsletter',
-    image: '/news.avif',
+    name: 'VS cosmética',
+    image: '/vsnc.avif',
     url: '',
-    repo: 'https://github.com/Patag1/newsletter',
-    desc: 'Actualiza a las personas las últimas noticias de tecnología. Se puede crear una cuenta, dar like/dislike, guardar/sacar noticias y cambiar el idioma de las noticias.',
+    repo: 'https://github.com/Patag1/natural-cosmetica',
+    desc: 'Un e-commerce full-stack hecho para ventas de cosméticos de mi hermana. Este proyecto en particular realmente desafió mis habilidades. Vale la pena porque pude ayudar a mi hermana!',
     descEN:
-      'Keeps people updated on latest news on tech. Users can create an account, like/dislike, save/unsave news and change language of news.',
+      "A full-stack e-commerce made for my sister's cosmetic sales. This project in particular really challenged my skills. It's worth it to help my sister out though!",
     techs: [
       'Tailwind CSS',
       'Typescript',
