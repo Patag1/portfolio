@@ -30,7 +30,7 @@ export default function Home() {
           <Gambetta remark weight>
             crecer
           </Gambetta>
-          , entiendiendo los desafíos y las oportunidades que surgen en la
+          , entendiendo los desafíos y las oportunidades que surgen en la
           industria de la tecnología, apasionado por ayudar a empresas como la
           suya a{' '}
           <Gambetta remark weight>

@@ -77,11 +77,11 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
               {t('hire.form.select.title')}
             </option>
             <option value="internship">{t('hire.form.select.intern')}</option>
+            <option value="recruiter">{t('hire.form.select.design')}</option>
             <option value="front-end">Front-end</option>
             <option value="back-end">Back-end</option>
             <option value="full stack">Full stack</option>
             <option value="freelance">Freelance</option>
-            <option value="recruiter">{t('hire.form.select.design')}</option>
           </select>
           <span className="absolute top-0 right-0 text-rose-400">*</span>
         </div>
