@@ -105,9 +105,9 @@ export const projects = [
     image: '/admin-ecomm.avif',
     url: 'https://admin-ecommerce-jet.vercel.app/',
     repo: 'https://github.com/Patag1/admin-ecommerce',
-    desc: 'Un dashboard para administradores de e-commerce full-stack (1ra parte, mirar siguiente proyecto). Este proyecto es una recreación de un proyecto existente, pero que pude recrear incluso con algunos obstáculos de desarrollo y producción. Más información en el repo!',
+    desc: 'Un dashboard para administradores de e-commerce full-stack (1ra parte, mirar siguiente proyecto). Gran funcionalidad, diseño cuidado, datos mostrados tanto en este como en el siguiente proyecto, principios SOLID de React. Más información en el repo!',
     descEN:
-      'A full-stack dashboard for e-commerce administrators (1st part, see following project). This project is a recreation of an existing project, but one that I was able to recreate it even with some development and production obstacles. More info in the repo!',
+      'A full-stack dashboard for e-commerce administrators (1st part, see following project). Great functionality, careful design, data displayed both in this and the following project, React SOLID principles. More info in the repo!',
     techs: [
       'Typescript',
       'Tailwind CSS',
@@ -129,9 +129,9 @@ export const projects = [
     image: '/public-ecomm.avif',
     url: 'https://public-ecommerce.vercel.app/',
     repo: 'https://github.com/Patag1/public-ecommerce',
-    desc: 'Un front-end de e-commerce para clientes (2da parte, mirar anterior proyecto). Este proyecto es una recreación de un proyecto existente, pero que pude recrear incluso con algunos obstáculos de desarrollo y producción. Más información en el repo!',
+    desc: 'Un front-end de e-commerce para clientes (2da parte, mirar anterior proyecto). Funcionalidad enlazada con el proyecto anterior, diseño cuidado, principios SOLID de React. Más información en el repo!',
     descEN:
-      'An e-commerce front-end for clients (2nd part, see previous project). This project is a recreation of an existing project, but one that I was able to recreate even with some development and production hurdles. More info in the repo!',
+      'An e-commerce front-end for clients (2nd part, see previous project). Functionality linked to the previous project, careful design, React SOLID principles. More info in the repo!',
     techs: [
       'Typescript',
       'Tailwind CSS',
