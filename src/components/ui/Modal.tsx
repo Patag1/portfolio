@@ -46,7 +46,7 @@ const Modal: FC<ModalProps> = ({}) => {
                   alt={name}
                   width={1}
                   height={1}
-                  className="md:w-96 w-full aspect-video object-cover border-[1px] border-cblack dark:border-cwhite"
+                  className="md:w-96 w-full aspect-video object-cover object-center border-[1px] border-cblack dark:border-cwhite"
                 />
               )}
               <p className="whitespace-normal md:w-96 w-full">
