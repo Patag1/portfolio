@@ -15,7 +15,7 @@ const UserLang = () => {
   
   const userLang = navigator?.language?.split('-')?.[0]?.toUpperCase()
 
-  return setLang(userLang)
+  setLang(userLang)
 }
 
 export default UserLang
