@@ -9,7 +9,6 @@ import global_es from '@/translations/es/global.json'
 import global_en from '@/translations/en/global.json'
 import { store } from '@/store/store'
 import Modal from './ui/Modal'
-import UserLang from './UserLang'
 
 interface ProviderProps {
   children: React.ReactNode
@@ -20,7 +19,7 @@ const Provider: FC<ProviderProps> = ({ children }) => {
 
   i18next.init({
     interpolation: { escapeValue: false },
-    lng: UserLang() ?? lang,
+    lng: lang ?? 'ES',
     resources: {
       ES: {
         global: global_es,

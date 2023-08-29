@@ -4,6 +4,7 @@ import UserLang from '@/components/UserLang'
 
 interface storeProps {
   lang: string
+  setLang: (lang: string) => void
   changeLang: () => void
   modalData: Project | null
   modalOpen: boolean
@@ -12,7 +13,8 @@ interface storeProps {
 }
 
 export const store = create<storeProps>((set, get) => ({
-  lang: UserLang() ?? 'ES',
+  lang: 'ES',
+  setLang: (lang) => set({ lang }),
   changeLang: () => set({ lang: get().lang === 'EN' ? 'ES' : 'EN' }),
   modalData: null,
   modalOpen: false,

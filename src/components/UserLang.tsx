@@ -1,9 +1,11 @@
 'use client'
 
+import { store } from '@/store/store'
 import { useEffect, useState } from 'react'
 
 const UserLang = () => {
   const [mounted, setMounted] = useState(false)
+  const { setLang } = store()
 
   useEffect(() => {
     setMounted(true)
@@ -13,7 +15,7 @@ const UserLang = () => {
   
   const userLang = navigator?.language?.split('-')?.[0]?.toUpperCase()
 
-  return userLang
+  return setLang(userLang)
 }
 
 export default UserLang
