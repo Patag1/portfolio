@@ -9,7 +9,7 @@ import Head from 'next/head'
 
 export const metadata = {
   title: 'Augusto S',
-  description: 'Made with love and style by Augusto Sasso',
+  description: 'Made with care and style by Augusto Sasso',
 }
 
 export default function RootLayout({

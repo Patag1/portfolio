@@ -19,7 +19,7 @@ const Provider: FC<ProviderProps> = ({ children }) => {
 
   i18next.init({
     interpolation: { escapeValue: false },
-    lng: lang,
+    lng: navigator?.language?.split('-')?.[0]?.toUpperCase() ?? lang,
     resources: {
       ES: {
         global: global_es,
