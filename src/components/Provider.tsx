@@ -31,8 +31,6 @@ const Provider: FC<ProviderProps> = ({ children }) => {
     },
   })
 
-  UserLang()
-
   return (
     <ThemeProvider attribute="class">
       <I18nextProvider i18n={i18next}>
