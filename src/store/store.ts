@@ -1,8 +1,9 @@
 import { Project } from '@/types'
 import { create } from 'zustand'
+import UserLang from '@/components/UserLang'
 
 interface storeProps {
-  lang: 'EN' | 'ES'
+  lang: string
   changeLang: () => void
   modalData: Project | null
   modalOpen: boolean
@@ -11,7 +12,7 @@ interface storeProps {
 }
 
 export const store = create<storeProps>((set, get) => ({
-  lang: 'ES',
+  lang: UserLang() ?? 'ES',
   changeLang: () => set({ lang: get().lang === 'EN' ? 'ES' : 'EN' }),
   modalData: null,
   modalOpen: false,
