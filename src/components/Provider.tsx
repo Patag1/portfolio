@@ -18,8 +18,6 @@ interface ProviderProps {
 const Provider: FC<ProviderProps> = ({ children }) => {
   const { lang } = store()
 
-  UserLang()
-
   i18next.init({
     interpolation: { escapeValue: false },
     lng: lang ?? 'ES',
@@ -32,6 +30,8 @@ const Provider: FC<ProviderProps> = ({ children }) => {
       },
     },
   })
+
+  UserLang()
 
   return (
     <ThemeProvider attribute="class">
