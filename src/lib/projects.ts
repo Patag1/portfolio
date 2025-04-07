@@ -103,7 +103,7 @@ export const projects = [
   {
     name: 'Admin E-commerce',
     image: '/admin-ecomm.avif',
-    url: 'https://admin-ecommerce-jet.vercel.app/',
+    url: 'https://admin-ecommerce-puce.vercel.app/',
     repo: 'https://github.com/Patag1/admin-ecommerce',
     desc: 'Un dashboard para administradores de e-commerce full-stack (1ra parte, mirar siguiente proyecto). Gran funcionalidad, diseño cuidado, datos mostrados tanto en este como en el siguiente proyecto, principios SOLID de React. Más información en el repo!',
     descEN:
@@ -119,7 +119,7 @@ export const projects = [
       'Clerk',
       'Node.js',
       'Prisma',
-      'Planet Scale',
+      'Supabase',
     ],
     status: false,
     ud: false,
